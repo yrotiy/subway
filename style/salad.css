@@ -561,4 +561,32 @@ body {
       .menu-list-container {
             display: none;
       }
+      .mobile-content {
+            display: block;
+      }
+}
+
+/* max-width : 520px */
+@media screen and (max-width: 520px) {
+      .mobile-tabs {
+            width: 350px;
+      }
+}
+
+/* max-width : 460px */
+@media screen and (max-width: 460px) {
+      .mobile-tabs {
+            width: 300px;
+      }
+      .mobile-tab p:nth-of-type(1) {
+            width: 100px;
+            font-size: 16px;
+            padding-left: 12px;
+      }
+      .mobile-tab p:nth-of-type(2) {
+            font-size: 12px;
+      }
+      .mobile-tab-icon img {
+            width: 80px;
+      }
 }

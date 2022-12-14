@@ -120,6 +120,7 @@ body {
       animation: titleUp 0.4s;
 }
 
+
 @keyframes titleUp {
       0% {
            transform: translateY(50px);
@@ -132,7 +133,7 @@ body {
 }
 
 .sub-hd-txt p:nth-child(2) {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 22px;
       animation: descUp 0.6s;
 }
@@ -170,25 +171,27 @@ body {
       margin: auto;
 }
 
+.menu-tag-bx li {
+      color: #525252;
+}
 .menu-tag-bx li:not(:last-child) {
       padding-right: 24px;
       border-right: 1px solid #a1a1a179;
 }
 
-.menu-tag-bx li:first-child a {
-      color: var(--primary-color);
-      font-weight: 600;
-}
-
 .menu-tag-bx a {
       font-weight: 600;
-      color: #525252;
 }
 
 .menu-tag-bx a:hover {
       color: var(--primary-color);
       font-weight: 600;
 }
+
+.menu-tag-bx li.active {
+      color: var(--primary-color);
+}
+
 
 /* ======== mobile-contents  ========*/
 .mobile-content {
@@ -214,7 +217,7 @@ body {
 .mobile-tab {
       width: 50%;
       text-align: center;
-      transition: 0.3s;
+      transition: 0.1s;
 }
 
 .mobile-tab:nth-child(1) {
@@ -253,13 +256,24 @@ body {
 }
 
 /* ======== menu-list-container  ========*/
+/* .menu-list-wrapper {
+      overflow: hidden;
+} */
+
 .menu-list-container {
       width: 1170px;
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       margin: auto;
-      padding: 55px 0 110px 0;
+      padding: 20px 0 70px 0;
+}
+
+.menu-list-container:not(:first-child) {
+      display: none;
+}
+
+.menu-list-container.active:not(:first-child) {
+      display: flex;
 }
 
 /* menu-item */
@@ -267,12 +281,13 @@ body {
       width: calc(1170px / 3 - 20px);
       height: 330px;
       position: relative;
+      margin: 10px;
       background-color: var(--white-color);
 }
 
 /* menu-front-item */
 .menu-img {
-      width: 240px;
+      width: 250px;
       margin: auto;
       padding-top: 15px;
 }
@@ -536,5 +551,33 @@ body {
       .menu-tag-bx,
       .menu-list-container {
             display: none;
+      }
+      .mobile-content {
+            display: block;
+      }
+}
+
+/* max-width : 520px */
+@media screen and (max-width: 520px) {
+      .mobile-tabs {
+            width: 350px;
+      }
+}
+
+/* max-width : 460px */
+@media screen and (max-width: 460px) {
+      .mobile-tabs {
+            width: 300px;
+      }
+      .mobile-tab p:nth-of-type(1) {
+            width: 100px;
+            font-size: 16px;
+            padding-left: 12px;
+      }
+      .mobile-tab p:nth-of-type(2) {
+            font-size: 12px;
+      }
+      .mobile-tab-icon img {
+            width: 80px;
       }
 }
