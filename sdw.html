@@ -1150,6 +1150,10 @@
       <script src="./script/jquery-3.6.1.js"></script>
       <script src="./script/jquery-ui.js"></script>
       <script>
+            //css으로 시도했으나, display flex not working
+            //일단 jquery으로 2~6번째 메뉴 hide
+            $('.menu-list-container:not(:first-child)').hide();
+
             //첫 번째 메뉴 고정
             $('.menu-tag-bx>ul>li:nth-child(1)').addClass('active');
 
@@ -1159,11 +1163,9 @@
 
                   let num = $(this).index();
 
-                  $('.menu-list-container').fadeOut();
+                  $(`.menu-list-container`).fadeOut();
                   $(`.menu-list-container:nth-child(${num+1})`).fadeIn('linear');
-                  $(`.menu-list-container:nth-child(${num+1})`).addClass('active');
                   
-
                   //메뉴 색상 변경
                   $(this).addClass('active');
                   $(this).siblings().removeClass('active');

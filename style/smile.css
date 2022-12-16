@@ -300,9 +300,8 @@ body {
       width: 1170px;
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       margin: auto;
-      padding: 55px 0 110px 0;
+      padding: 20px 0 70px 0;
 }
 
 /* menu-item */
@@ -310,14 +309,16 @@ body {
       width: calc(1170px / 3 - 20px);
       height: 330px;
       position: relative;
+      margin: 10px;
       background-color: var(--white-color);
 }
 
 /* menu-front-item */
 .menu-img {
-      width: 240px;
+      width: 225px;
       margin: auto;
-      padding-top: 15px;
+      padding-top: 25px;
+      margin-bottom: 10px;
 }
 
 .menu-img img {

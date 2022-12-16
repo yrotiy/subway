@@ -185,7 +185,6 @@ body {
 
 .menu-tag-bx a:hover {
       color: var(--primary-color);
-      font-weight: 600;
 }
 
 .menu-tag-bx li.active {
@@ -256,24 +255,12 @@ body {
 }
 
 /* ======== menu-list-container  ========*/
-/* .menu-list-wrapper {
-      overflow: hidden;
-} */
-
 .menu-list-container {
       width: 1170px;
       display: flex;
       flex-wrap: wrap;
       margin: auto;
       padding: 20px 0 70px 0;
-}
-
-.menu-list-container:not(:first-child) {
-      display: none;
-}
-
-.menu-list-container.active:not(:first-child) {
-      display: flex;
 }
 
 /* menu-item */
