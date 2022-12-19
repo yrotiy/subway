@@ -169,17 +169,6 @@
       color: var(--primary-color);
       text-decoration: underline;
 }
-/* finish marking */
-/* #finish::before {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--point-color);
-} */
 
 /* -- slide-menu-btn -- */
 /* 새로 만들기 */
