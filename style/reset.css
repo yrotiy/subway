@@ -14,6 +14,13 @@
       font-style: normal;
 }
 
+@font-face {
+      font-family: 'GangwonEduPowerExtraBoldA';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+}
+
 /* ======== reset CSS  ========*/
 * {
       margin: 0;
@@ -65,5 +72,5 @@ a {
       --sub-body: #f2f2f2;
       --sub-hd: #e95b1d;
       --sublnb-after: #ffffff90;
-      --sdwback-txt-3: #ffebaac3;
+      --sdwback-txt-3: #ecdba0;
 }

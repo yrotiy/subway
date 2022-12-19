@@ -22,7 +22,6 @@
       position: relative;
       display: flex;
       align-items: center;
-      padding: 18px 0;
       color: #999999;
 }
 
@@ -73,6 +72,14 @@
       width: 115px;
 }
 
+.sub-hd-lnb a {
+      display: block;
+      line-height: 56px;
+      height: 56px;
+}
+
+
+/* group-menu */
 section.group-menu {
       width: 100%;
 }

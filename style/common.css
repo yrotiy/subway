@@ -4,26 +4,29 @@
       display: flex;
       justify-content: center;
       border-top: 5px solid var(--primary-color);
+      background-color: #fff;
 }
 
+/* ---- main-hd-bg (main-hd의 white-bg)---- */
 .main-hd-bg {
       width: 100%;
-      height: calc(43px * 5 + 66px);
-      background-color: #fff;
+      height: 0;
+      /* height: 280px; */
       position: absolute;
       top: 176px;
+      z-index: 2;
       border-top: 1px solid #37373746;
-      z-index: 1;
+      background-color: #fff;
+      box-shadow: #0000001a 0px 20px 25px -5px, #0000000a 0px 10px 10px -5px;
 }
 
 .hd-container {
       width: 1180px;
       height: auto;
       position: relative;
-      background-color: pink;
 }
 
-/* hd-top */
+/* -- hd-top-container -- */
 .hd-top-container {
       width: 100%;
       height: 125px;
@@ -61,16 +64,12 @@
       justify-content: space-between;
 }
 
-.gnb li:hover a {
-      cursor: pointer;
-}
-
 .gnb li:first-child::after {
       content: "";
       width: 4px;
       height: 4px;
       display: inline-block;
-      margin-left: 18px;
+      margin-left: 15px;
       margin-bottom: 2px;
       border-radius: 50%;
       background-color: var(--gnb-after);
@@ -93,12 +92,16 @@
 }
 
 .gnb a {
-      font-size: 12px;
+      font-size: 14px;
       color: var(--text-black);
       transition: 0.3s;
 }
 
-/* hd-btm */
+.gnb li:hover a {
+      cursor: pointer;
+}
+
+/* -- hd-btm-container -- */
 .hd-btm-container {
       width: 100%;
 }
@@ -109,28 +112,34 @@
       background-color: #fff;
 }
 
-.lnb > ul {
-      width: 100%;
-      display: flex;
-      position: relative;
-}
-
-.lnb > ul > li {
-      font-size: 18px;
-      font-weight: bolder;
-      padding-bottom: 25px;
-
-}
-
+/* lnb&sub-menu */
 .lnb li {
       width: calc(1180px / 6);
       text-align: center;
 }
 
-.lnb .sub-menu {
-      height: calc(43px * 5 + 63px);
+.lnb > ul > li:hover > a {
+      color: var(--primary-color);
+}
+
+.lnb > ul {
+      width: 100%;
+      position: relative;
+      display: flex;
+}
+
+.lnb > ul > li {
+      padding-bottom: 25px;
+      font-size: 18px;
+      font-weight: bolder;
+}
+
+/* sub-menu */
+.sub-menu {
+      height: 278px;
       position: absolute;
       top: 47px;
+      display: none;
       z-index: 9;
       background-color: transparent;
 }
@@ -143,24 +152,37 @@
       padding-top: 26px;
 }
 
-.lnb > ul > li:hover > a {
-      color: var(--primary-color);
-}
-
-/* sub-menu */
-.lnb .sub-menu a {
+.sub-menu a {
       font-size: 15px;
-      font-weight: 400;
+      font-weight: normal;
       color: var(--text-gray);
       transition: 0.5s;
 }
 
-.lnb .sub-menu a:hover {
+.sub-menu a:hover {
       color: var(--primary-color);
       text-decoration: underline;
 }
 
-/* slide-menu */
+#finish > a {
+      font-weight: bolder;
+      color: var(--primary-color);
+      text-decoration: underline;
+}
+/* finish marking */
+/* #finish::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--point-color);
+} */
+
+/* -- slide-menu-btn -- */
+/* 새로 만들기 */
 .slide-menu-btn {
       position: absolute;
       top: 43px;
@@ -195,7 +217,6 @@ input[id="slide-menu-btn"]:checked + label + .slide-menu {
       z-index: 2;
       opacity: 0;
       transition: 0.5s;
-
 }
 
 /* slide-gnb */
@@ -315,7 +336,7 @@ input[id="slide-menu-btn"]:checked + label + .slide-menu {
 /* ======== footer ======== */
 footer {
       width: 100%;
-      height: 180px;
+      height: 160px;
       display: flex;
       align-items: center;
       background-color: #292929;
@@ -417,6 +438,12 @@ footer {
 
 .sns-instagram:hover {
       background-image: url('../images/instagram_1-2.png');
+}
+
+.ft-btm-right a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
 }
 
 .sns-facebook {

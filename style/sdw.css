@@ -1,6 +1,43 @@
 body {
       background-color: var(--sub-body);
 }
+
+.try {
+      width: 300px;
+      height: fit-content;
+      position: absolute;
+      left: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      font-weight: bolder;
+      text-align: center;
+      border-radius: 30px;
+      background-color: var(--white-color);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;      
+      z-index: 1;
+      transition: 0.3s;
+}
+
+.try:hover {
+      left: 33px;
+      cursor: pointer;
+}
+
+.try i {
+      font-size: 25px;
+      padding-left: 15px;
+}
+
+.try-1 {
+      top: 177px;
+}
+
+.try-2 {
+      bottom: 348px;
+}
+
 /* ======== sub-hd  ========*/
 .sub-hd {
       width: 100%;
@@ -37,6 +74,11 @@ body {
       border-bottom: 1px solid #ffffff48;
 }
 
+.sub-hd-lnb-container.click {
+      background-color: var(--primary-color);
+      transition: 0.4s;
+}
+
 .sub-hd-lnb {
       width: 650px;
       margin: auto;
@@ -51,7 +93,6 @@ body {
       position: relative;
       display: flex;
       align-items: center;
-      padding: 18px 0;
       color: var(--white-color);
 }
 
@@ -99,6 +140,12 @@ body {
       border-radius: 50%;
       margin-left: 25px;
       background-color: #dddddd;
+}
+
+.sub-hd-lnb a {
+      display: block;
+      line-height: 56px;
+      height: 56px;
 }
 
 /* sub-hd-txt */
@@ -160,6 +207,11 @@ body {
       background-color: var(--white-color);
       box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
                   rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.menu-tag-bx.click {
+      bottom: 45px;
+      transition: 0.4s;
 }
 
 .menu-tag-bx ul {
