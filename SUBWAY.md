@@ -1,12 +1,14 @@
-CSS 분류 주석
-/* ======== class  ========*/
+> ### CSS 분류 주석
+```
+1. /* ======== class  ========*/
 
-/* ---- class ---- */
+2. /* ---- class ---- */
 
-/* class */
+3. /* class */
+``` 
+* * *
 
-
-<메뉴소개> 업데이트 사항 
+> ### 업데이트 사항
 
 1. HTML
 - ```sub-hd(try-1)```
@@ -25,7 +27,7 @@ CSS 분류 주석
       <i class="fa-solid fa-hand-point-right"></i>
 </div>
 ```
-
+* * *
 2. CSS
 ```
 .try {
@@ -78,6 +80,7 @@ CSS 분류 주석
 }
 
 ```
+* * *
 3. JS&JQuery
 ```
 <!-- fontawesome script -->

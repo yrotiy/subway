@@ -7,12 +7,11 @@ h2 {
       text-align: center;
       background-color: var(--point-color);
 }
-/* ======= sub-hd-basic ======= */
+
+/* ======= common_sub-hd ======= */
 .sub-hd {
       width: 100%;
-      /* sub-hd.html 내 구분을 위한 것이므로, 사용할때 빼야함 */
-      margin: 10px 0;
-      /* 위의 코드 (margin) */
+      margin: 10px 0;  /* 해당 페이지 내의 구분을 위한 것이므로, 사용할 때 삭제 */
       border-top: 1px solid #e5e5e5;
       border-bottom: 1px solid #e5e5e5;
 }
@@ -66,7 +65,7 @@ h2 {
       background-color: #dddddd;
 }
 
-/* 클래스명 'sub-hd-0N'은 sub-hd.html 내 구분을 위한 것이므로, 사용할때 빼야함  */
+/* sub-hd-0$은 구분을 위한 것이므로, 사용할 때 삭제 */
 /* ======= sub-hd-01 ======= */
 .sub-hd-01 .sub-hd-lnb li:hover {
       color: var(--point-color);
@@ -117,11 +116,11 @@ h2 {
 }
 
 /* ======= sub-hd-04 ======= */
-/* 써브웨이 역사만 point-color*/
 .sub-hd-04 .sub-hd-lnb {
       width: 590px;
 }
 
+/* 써브웨이 역사만 point-color*/
 .sub-hd-04 .sub-hd-lnb li:nth-child(1):hover {
       color: var(--point-color);
 }
@@ -145,7 +144,7 @@ h2 {
 
 /* ======= sub-hd-05 ======= */
 .sub-hd-05 .sub-hd-lnb {
-      width: 680px;
+      width: 700px;
 }
 
 .sub-hd-05 .sub-hd-lnb li:nth-child(1):hover::before {
@@ -166,4 +165,29 @@ h2 {
 
 .sub-hd-05 .sub-hd-lnb li:nth-child(5):hover::before {
       width: 68px;
+}
+
+/* ======= sub-hd-06 ======= */
+.sub-hd-06 .sub-hd-lnb {
+      width: 370px;
+}
+
+.sub-hd-06 .sub-hd-lnb li:hover {
+      color: var(--point-color);
+}
+
+.sub-hd-06 .sub-hd-lnb li::before {
+      background-color: var(--point-color);
+}
+
+.sub-hd-06 .sub-hd-lnb li:nth-child(1):hover::before {
+      width: 75px;
+}
+
+.sub-hd-06 .sub-hd-lnb li:nth-child(2):hover::before {
+      width: 85px;
+}
+
+.sub-hd-06 .sub-hd-lnb li:nth-child(3):hover::before {
+      width: 55px;
 }

@@ -1,16 +1,16 @@
 // ============ main-hd =============
 $('.lnb').on('mouseenter', function (ev) {
       ev.stopPropagation();
-      $('.main-hd-bg').animate({
+      $('.main-hd-bg').stop().animate({
             'height': '280px'
       });
-      $('.sub-menu').slideDown().css('display', 'block');
+      $('.sub-menu').stop().slideDown();
 })
 $('.lnb').on('mouseleave', function (ev) {
       ev.stopPropagation();
-      $('.main-hd-bg').animate({
+      $('.main-hd-bg').stop().animate({
             'height': 0
       });
-      $('.sub-menu').slideUp();
+      $('.sub-menu').stop().slideUp();
 })
 
