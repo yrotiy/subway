@@ -221,10 +221,10 @@
                         <li><a href="#">추가선택</a></li>
                   </ul>
             </div>
-            <div class="try try-2">
+            <!-- <div class="try try-2">
                   <p>원하는 카테고리를 클릭해보세요.</p>
                   <i class="fa-solid fa-hand-point-right"></i>
-            </div>
+            </div> -->
             <!-- menu-list-wrapper (그냥 한번 감싸는 용도)-->
             <div class="menu-list-wrapper">
                   <!-- all-contents -->
@@ -1179,8 +1179,9 @@
 
                   let num = $(this).index();
 
-                  $('.menu-list-container').fadeOut();
-                  $(`.menu-list-container:nth-child(${num + 1})`).fadeIn();
+                  $('.menu-list-container').hide();
+                  $(`.menu-list-container:nth-child(${num + 1})`).show();
+                  $(`.menu-list-container:nth-child(${num + 1})>.menu-item`).addClass('show');
 
                   $(this).siblings().removeClass('active');
                   $(this).addClass('active');
@@ -1193,12 +1194,12 @@
                   $('.sub-hd-lnb-container').removeClass('click');
             })
 
-            $('.try-2').on('mouseover', function(){
-                  $('.menu-tag-bx').addClass('click');
-            })
-            $('.try-2').on('mouseleave', function(){
-                  $('.menu-tag-bx').removeClass('click');
-            })
+            // $('.try-2').on('mouseover', function(){
+            //       $('.menu-tag-bx').addClass('click');
+            // })
+            // $('.try-2').on('mouseleave', function(){
+            //       $('.menu-tag-bx').removeClass('click');
+            // })
       </script>
 </body>
 

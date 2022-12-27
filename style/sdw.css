@@ -324,6 +324,19 @@ body {
       background-color: var(--white-color);
 }
 
+.menu-item.show {
+      animation: showMenu 0.4s;
+}
+
+@keyframes showMenu {
+      0% {
+            transform: scale(0);
+      }
+      100% {
+            transform: scale(1);
+      }
+}
+
 /* menu-front-item */
 .menu-img {
       width: 250px;

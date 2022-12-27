@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>sbm-card-slider page</title>
+      <!-- google icon CSS -->
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+      <style>
+            * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+            }
+            body {
+                  width: 100%;
+                  height: 100vh;
+                  background-color: antiquewhite;
+                  overflow: hidden;
+            }
+
+            .sbm-hd {
+                  width: 100%;
+                  background-color: pink;
+                  display: flex;
+                  justify-content: space-evenly;
+                  align-items: center;
+                  margin-bottom: 180px;
+            }
+
+            .sbm-hd ul {
+                  width: 500px;
+                  display: flex;
+                  list-style: none;
+            }
+            .sbm-hd li.active {
+                  color: blue;
+            }
+
+            img {
+                  width: 250px;
+            }
+
+            .sbm-item {
+                  width: 290px;
+                  height: 340px;
+                  text-align: center;
+                  background-color: saddlebrown;
+                  font-size: 14px;
+            }
+
+            .material-symbols-sharp {
+                  font-size: 38px;
+                  font-weight: bolder;
+                  cursor: pointer;
+            }
+
+            .material-symbols-sharp:hover {
+                  color: red;
+            }
+
+            .sbm-slider-wrapper {
+                  width: 100%;
+                  height: 340px;
+                  position: relative;
+                  background-color: black;
+            }
+
+            .sbm-slider-container {
+                  width: 1320px;
+                  height: 340px;
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  overflow: hidden;
+                  background-color: skyblue;
+                  opacity: 0;
+            }
+            .sbm-slider-container:nth-child(1) {
+                  opacity: 1;
+                  z-index: 99;
+            }
+            .sbm-slider-container:nth-child(2) {
+                  background-color: sandybrown;
+            }
+            .sbm-slider-container:nth-child(3) {
+                  background-color: slateblue;
+            }
+            .sbm-slider-container:nth-child(4) {
+                  background-color: slategrey;
+            }
+            .sbm-slider-inner {
+                  display: flex;
+                  column-gap: 20px;
+                  position: absolute;
+                  left: 0;
+            }
+
+            .sbm-controls {
+                  width: 100%;
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  transform: translateY(-50%);
+                  display: flex;
+                  justify-content: space-between;
+            }
+            .sbm-item:nth-child(1) {
+                  margin-left: 50px;
+            }
+            .sbm-item:nth-child(4) {
+                  margin-right: 40px;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="wrapper">
+            <header class="sbm-hd">
+                  <div class="sbm-title">
+                        <h2>Subway's Menu</h2>
+                  </div>
+                  <div class="subway-menu">
+                        <ul>
+                              <li>클래식</li>
+                              <li>프레쉬&라이트</li>
+                              <li>프리미엄</li>
+                              <li>아침메뉴</li>
+                        </ul>
+                  </div>
+            </header>
+            <div class="sbm-slider-wrapper">
+                  <div class="sbm-slider-container">
+                        <div class="sbm-slider-inner">
+                              <div class="sbm-item">
+                                    <div class="card-img"><img src="./images/sbm-card-1.jpg" alt=""></div>
+                                    <div class="card-txt">
+                                          <p class="card-title">에그마요</p>
+                                          <p class="card-desc">부드러운 달걀과 고소한 마요네즈가 만나<br>더 부드러운 스테디셀러</p>
+                                    </div>
+                                    <div class="menu-more">
+                                          <span class="material-symbols-sharp">search</span>
+                                    </div>
+                              </div>
+                              <div class="sbm-item">
+                                    <div class="card-img"><img src="./images/sbm-card-2.jpg" alt=""></div>
+                                    <div class="card-txt">
+                                          <p class="card-title">이탈리안 비엠티</p>
+                                          <p class="card-desc card-desc-3">페페로니, 살라미 그리고 햄이<br>만들어내는 최상의<br>
+                                                조화! 전세계가<br>사랑하는 써브웨이의 베스트셀러!<br> Biggest Meatiest Tastiest, it's B.M.T!</p>
+                                    </div>
+                                    <div class="menu-more">
+                                          <span class="material-symbols-sharp">search</span>
+                                    </div>
+                              </div>
+                              <div class="sbm-item">
+                                    <div class="card-img"><img src="./images/sbm-card-3.jpg" alt=""></div>
+                                    <div class="card-txt">
+                                          <p class="card-title">비엘티</p>
+                                          <p class="card-desc">오리지널 아메리칸 스타일<br>베이컨의 풍미와 바삭함 그대로</p>
+                                    </div>
+                                    <div class="menu-more">
+                                          <span class="material-symbols-sharp">search</span>
+                                    </div>
+                              </div>
+                              <div class="sbm-item">
+                                    <div class="card-img"><img src="./images/sbm-card-4.jpg" alt=""></div>
+                                    <div class="card-txt">
+                                          <p class="card-title">햄</p>
+                                          <p class="card-desc">기본 중에 기본!<br>풍부한 햄이 만들어내는<br>입 안 가득 넘치는 맛의 향연</p>
+                                    </div>
+                                    <div class="menu-more">
+                                          <span class="material-symbols-sharp">search</span>
+                                    </div>
+                              </div>
+                              <div class="sbm-item">
+                                    <div class="card-img"><img src="./images/sbm-card-5.jpg" alt=""></div>
+                                    <div class="card-txt">
+                                          <p class="card-title">참치</p>
+                                          <p class="card-desc">남녀노소 누구나 좋아하는<br>담백한 참치와 고소한 마요네즈의<br>완벽한 조화</p>
+                                    </div>
+                                    <div class="menu-more">
+                                          <span class="material-symbols-sharp">search</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="sbm-controls">
+                              <div class="sbm-prev">
+                                    <span class="material-symbols-sharp">chevron_left</span>
+                              </div>
+                              <div class="sbm-next">
+                                    <span class="material-symbols-sharp">chevron_right</span>
+                              </div>
+                        </div>
+                  </div>
+                  
+            </div>
+      </div>
+
+      <script src="./script/jquery-3.6.1.js"></script>
+      <script src="./script/jquery-ui.js"></script>
+      <script>
+            $('.subway-menu li:first-child').addClass('active');
+
+            $('.subway-menu li').on('click', function (event) {
+                  event.preventDefault();
+
+                  let num = $(this).index();
+                  $('.sbm-slider-container').css({
+                        'left' : '150%',
+                        'opacity' : '0'
+                  });
+                  $(`.sbm-slider-container:nth-child(${num+1})`).animate({
+                        'left' : '50%',
+                        'opacity' : '1'
+                  })
+                  $(this).siblings().removeClass('active');
+                  $(this).addClass('active');
+            })
+
+            function rightBtn() {
+                  $('.sbm-slider-inner').css({ 'left': '-97%', 'transition': '0.4s' })
+            }
+
+            $('.sbm-next').on('click', function () {
+                  rightBtn();
+                  // $(this).addClass('active');
+                  // $('.sbm-left').addClass('active');
+            });
+
+            function leftBtn() {
+                  $('.sbm-slider-inner').css({ 'left': '0', 'transition': '0.4s' })
+            }
+
+            $('.sbm-prev').on('click', function () {
+                  leftBtn();
+            });
+      </script>
+</body>
+
+</html>
