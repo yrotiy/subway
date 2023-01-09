@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>SUBWAY INDEX PAGE</title>
+      <!-- bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <!-- reset CSS -->
       <link rel="stylesheet" href="./style/reset.css">
       <!-- common CSS -->
@@ -14,6 +17,7 @@
       <!-- google icon CSS -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+
 <body>
       <div class="wrapper">
             <!-- header -->
@@ -29,81 +33,7 @@
                                           <ul>
                                                 <li><a href="">로그인</a></li>
                                                 <li><a href="">회원가입</a></li>
-                                                <li><a href=""><img src="./images/gnb_lang-btn.png" alt=""></a></li>
                                           </ul>
-                                    </div>
-                                    <div class="menu-btn">
-                                          <input type="checkbox" id="slide-menu-btn">
-                                          <label for="slide-menu-btn" class="slide-menu-btn"><span
-                                                      class="material-symbols-sharp">menu</span></label>
-                                          <div class="slide-menu">
-                                                <div class="slide-gnb">
-                                                      <ul>
-                                                            <li><a href="">로그인</a></li>
-                                                            <li><a href="">회원가입</a></li>
-                                                            <li><a href=""><img src="./images/gnb_lang-btn.png"
-                                                                              alt=""></a></li>
-                                                      </ul>
-                                                </div>
-                                                <ul class="slide-lnb">
-                                                      <li><a href="#" class="lnb-title">메뉴소개<span
-                                                                        class="material-symbols-sharp">fastfood</span></a>
-                                                            <ul class="slide-sub-menu">
-                                                                  <li><a href="sdw.html">샌드위치</a></li>
-                                                                  <li><a href="wrap.html">랩 · 기타</a></li>
-                                                                  <li><a href="salad.html">샐러드</a></li>
-                                                                  <li><a href="morning.html">아침메뉴</a></li>
-                                                                  <li><a href="smile.html">스마일썹</a></li>
-                                                                  <li><a href="group.html">단체메뉴</a></li>
-                                                            </ul>
-                                                      </li>
-                                                      <li><a href="#" class="lnb-title">이용방법<span
-                                                                        class="material-symbols-sharp">manage_search</span></a>
-                                                            <ul class="slide-sub-menu">
-                                                                  <li><a href="sub-use.html">써브웨이 이용방법</a></li>
-                                                                  <li><a href="gm-use.html">단체메뉴 이용방법</a></li>
-                                                                  <li><a href="fresh-info.html">신선한 재료 소개</a></li>
-                                                                  <li><a href="app-use.html">App 이용방법</a></li>
-                                                            </ul>
-                                                      </li>
-                                                      <li><a href="#" class="lnb-title">새소식<span
-                                                                        class="material-symbols-sharp">mark_as_unread</span></a>
-                                                            <ul class="slide-sub-menu">
-                                                                  <li><a href="sub-event.html">이벤트 · 프로모션</a></li>
-                                                                  <li><a href="sub-news.html">뉴스 · 공지사항</a></li>
-                                                                  <li><a href="sub-ad.html">광고영상</a></li>
-                                                            </ul>
-                                                      </li>
-                                                      <li><a href="#" class="lnb-title">써브웨이<span
-                                                                        class="material-symbols-sharp">corporate_fare</span></a>
-                                                            <ul class="slide-sub-menu">
-                                                                  <li><a href="sub-history.html">써브웨이 역사</a></li>
-                                                                  <li><a href="sub-promise.html">단체메뉴 약속</a></li>
-                                                                  <li><a href="sub-artist.html">샌드위치 아티스트 지원</a></li>
-                                                                  <li><a href="sub-store.html">매장찾기</a></li>
-                                                            </ul>
-                                                      </li>
-                                                      <li><a href="#" class="lnb-title">가맹점<span
-                                                                        class="material-symbols-sharp">storefront</span></a>
-                                                            <ul class="slide-sub-menu">
-                                                                  <li><a href="sub-franchise.html">써브웨이 프랜차이즈</a></li>
-                                                                  <li><a href="franchise-FAQ.htm">가맹관련 FAQ</a></li>
-                                                                  <li><a href="franchise-inquiry.html">가맹신청 · 문의</a></li>
-                                                                  <li><a href="branch-guide.html">자사안내</a></li>
-                                                                  <li><a href="franchise-info.html">사업설명회</a></li>
-                                                            </ul>
-                                                      </li>
-                                                      <li><a href="#" class="lnb-title">온라인주문<span
-                                                                        class="material-symbols-sharp">lift_to_talk</span></a>
-                                                            <ul class="slide-sub-menu">
-                                                                  <li><a href="fast-sub.html">FAST-SUB</a></li>
-                                                                  <li><a href="home-sub.html">HOME-SUB</a></li>
-                                                                  <li><a href="group-order.html">단체주문</a></li>
-                                                            </ul>
-                                                      </li>
-                                                </ul>
-
-                                          </div>
                                     </div>
                               </div>
                         </div>
@@ -162,24 +92,30 @@
                                     </ul>
                               </nav>
                         </div>
+                        <!-- <div class="slideMenu-hd">
+                              <div class="slideMenu-hd-inner">
+                                    <div class="slideMenu-logo"><img src="./images/slideMenu-logo.jpg"
+                                                alt="slideMenu Logo"></div>
+                                    <div class="slideMenu-btn">
+                                          <div class="slideMenu-btn-i"></div>
+                                          <div class="slideMenu-btn-i"></div>
+                                          <div class="slideMenu-btn-i"></div>
+                                    </div>
+                              </div>
+                        </div> -->
+                        <div class="mobile-menu-btn">
+                              <div class="mobile-menu-btn-i">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                              </div>
+                        </div>
                   </div>
             </header>
             <div class="main-hd-bg"></div>
             <!-- main -->
             <main>
-                  <div class="main-container"> 
-                        <div class="mobile-tabs">
-                              <a href="" class="mobile-tab">
-                                    <p>FAST-SUB</p>
-                                    <p>매장 선주문</p>
-                                    <div class="mobile-tab-icon"><img src="./images/mobile-tab-1.jpg" alt=""></div>
-                              </a>
-                              <a href="" class="mobile-tab">
-                                    <p>HOME-SUB</p>
-                                    <p>배달 주문</p>
-                                    <div class="mobile-tab-icon mobile-tab-icon-2"><img src="./images/mobile-tab-2.jpg" alt=""></div>
-                              </a>
-                        </div>
+                  <div class="main-container">
                         <div class="banner-slider">
                               <div class="bxslider">
                                     <div class="banner-bx"><img src="./images/main-banner-1.jpg"></div>
@@ -205,9 +141,175 @@
                                     </span>
                               </a>
                         </div>
-                        
+
                   </div>
             </main>
+            <section class="mobile-container">
+                  <div class="mobile-menu">
+                        <!-- mobile-gnb -->
+                        <div class="mobile-gnb">
+                              <p>로그인해주세요.<br>아직 회원이 아니신가요?</p>
+                              <ul>
+                                    <li><a href="">로그인</a></li>
+                                    <li><a href="">회원가입</a></li>
+                              </ul>
+                        </div>
+                        <!-- mobilemyMenu -->
+                        <div class="mobile-myMenu">
+                              <ul>
+                                    <li><a href="">FAST-SUB</a></li>
+                                    <li><a href="">HOME-SUB</a></li>
+                                    <li><a href="">단체주문</a></li>
+                                    <li><a href="">써브카드</a></li>
+                                    <li><a href="">쿠폰</a></li>
+                                    <li><a href="">e-Gift</a></li>
+                              </ul>
+                        </div>
+                        <!-- mobilelnb -->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item mobile-lnb">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                          <button class="first-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                <span><img src="./images/mobile-lnb-1.png" alt=""></span> 메뉴소개
+                                          </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                          data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                                <ul id="mobile-lnb-sub">
+                                                      <li id="finish"><a href="./html/sdw.html">샌드위치</a></li>
+                                                      <li id="finish"><a href="./html/wrap.html">랩 · 기타</a></li>
+                                                      <li id="finish"><a href="./html/salad.html">샐러드</a></li>
+                                                      <li id="finish"><a href="./html/morning.html">아침메뉴</a></li>
+                                                      <li id="finish"><a href="./html/smile.html">스마일썹</a></li>
+                                                      <li id="finish"><a href="./html/group.html">단체메뉴</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="accordion-item mobile-lnb">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                aria-controls="flush-collapseTwo">
+                                                <span><img src="./images/mobile-lnb-2.png" alt=""></span>이용방법
+                                          </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                                          data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                                <ul id="mobile-lnb-sub">
+                                                      <li><a href="./html/sub-use.html">써브웨이 이용방법</a></li>
+                                                      <li><a href="./html/gm-use.html">단체메뉴 이용방법</a></li>
+                                                      <li id="finish"><a href="./html/fresh-info.html">신선한 재료 소개</a></li>
+                                                      <li><a href="./html/app-use.html">App 이용방법</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="accordion-item mobile-lnb">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                aria-controls="flush-collapseThree">
+                                                <span><img src="./images/mobile-lnb-3.png" alt=""></span>새소식
+                                          </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                                          data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                                <ul id="mobile-lnb-sub">
+                                                      <li><a href="./html/sub-event.html">이벤트 · 프로모션</a></li>
+                                                      <li><a href="./html/sub-news.html">뉴스 · 공지사항</a></li>
+                                                      <li><a href="./html/sub-ad.html">광고영상</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="accordion-item mobile-lnb">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                                aria-controls="flush-collapseFour">
+                                                <span><img src="./images/mobile-lnb-4.png" alt=""></span>써브웨이
+                                          </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                                          data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                                <ul id="mobile-lnb-sub">
+                                                      <li><a href="./html/sub-history.html">써브웨이 역사</a></li>
+                                                      <li><a href="./html/sub-promise.html">단체메뉴 약속</a></li>
+                                                      <li><a href="./html/sub-artist.html">샌드위치 아티스트 지원</a></li>
+                                                      <li><a href="./html/sub-store.html">매장찾기</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="accordion-item mobile-lnb">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                                aria-controls="flush-collapseFive">
+                                                <span><img src="./images/mobile-lnb-5.png" alt=""></span>가맹점
+                                          </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                                          data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                                <ul id="mobile-lnb-sub">
+                                                      <li><a href="./html/sub-franchise.html">써브웨이 프랜차이즈</a></li>
+                                                      <li><a href="./html/franchise-FAQ.html">가맹관련 FAQ</a></li>
+                                                      <li><a href="./html/branch-guide.html">자사안내</a></li>
+                                                      <li><a href="./html/franchise-info.html">사업설명회</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="accordion-item mobile-lnb">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                          <button class="last-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                                aria-controls="flush-collapseSix">
+                                                <span><img src="./images/mobile-lnb-6.png" alt=""></span>고객센터
+                                          </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                                          data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                                <ul id="mobile-lnb-sub">
+                                                      <li><a href="./html/FAQ.html">FAQ</a></li>
+                                                      <li><a href="./html/inquiry.html">1:1 문의</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="mobile-slider">
+                        <a href="#"><img src="./images/mobile-banner-1.jpg" alt=""></a>
+                        <a href="#"><img src="./images/mobile-banner-2.jpg" alt=""></a>
+                        <a href="#"><img src="./images/mobile-banner-3.jpg" alt=""></a>
+                        <a href="#"><img src="./images/mobile-banner-4.jpg" alt=""></a>
+                        <a href="#"><img src="./images/mobile-banner-5.jpg" alt=""></a>
+                  </div>
+                  <div class="mobile-tabs">
+                        <a href="" class="mobile-tab">
+                              <p>FAST-SUB</p>
+                              <p>매장 선주문</p>
+                              <div class="mobile-tab-icon"><img src="./images/mobile-tab-1.png" alt=""></div>
+                        </a>
+                        <span class="mbt-bdr"></span>
+                        <a href="" class="mobile-tab">
+                              <p>HOME-SUB</p>
+                              <p>배달 주문</p>
+                              <div class="mobile-tab-icon mobile-tab-icon-2"><img src="./images/mobile-tab-2.png"
+                                          alt=""></div>
+                        </a>
+                  </div>
+            </section>
             <!-- section01_subway-menu -->
             <section class="subway-menu">
                   <div class="sbm-container">
@@ -243,7 +345,8 @@
                                                 <div class="sbm-txt">
                                                       <p>이탈리안 비엠티</p>
                                                       <p class="cls-3">페페로니, 살라미 그리고 햄이<br> 만들어내는 최상의<br>
-                                                            조화! 전세계가<br>사랑하는 써브웨이의 베스트셀러!<br> Biggest Meatiest Tastiest, it's B.M.T!</p>
+                                                            조화! 전세계가<br>사랑하는 써브웨이의 베스트셀러!<br> Biggest Meatiest Tastiest,
+                                                            it's B.M.T!</p>
                                                 </div>
                                                 <a class="sbm-more" href="#">
                                                       <span class="material-symbols-sharp">search</span>
@@ -293,7 +396,8 @@
                               <div class="sbm-slider-container sbm-slider-w">
                                     <div class="sbm-slider-inner">
                                           <div class="sbm-item">
-                                                <div class="sbm-img fal-img"><img class="fal" src="./images/sandwich-8.png" alt=""></div>
+                                                <div class="sbm-img fal-img"><img class="fal"
+                                                            src="./images/sandwich-8.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>로티세리 바비큐 치킨</p>
                                                       <p>촉촉한 바비큐 치킨의 풍미가득.<br>손으로 찢어 더욱 부드러운 치킨의 혁명</p>
@@ -303,7 +407,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img fal-img"><img class="fal" src="./images/sandwich-9.png" alt=""></div>
+                                                <div class="sbm-img fal-img"><img class="fal"
+                                                            src="./images/sandwich-9.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>로스트 치킨</p>
                                                       <p>오븐에 구워 담백한<br>저칼로리 닭가슴살의 건강한 풍미</p>
@@ -313,17 +418,19 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img fal-img"><img class="fal" src="./images/sandwich-5.png" alt=""></div>
+                                                <div class="sbm-img fal-img"><img class="fal"
+                                                            src="./images/sandwich-5.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>써브웨이 클럽</p>
                                                       <p>고소한 베이컨, 담백한 치킨 슬라이스에<br>햄까지 더해진 완벽한 앙상블</p>
                                                 </div>
-                                                <a href="#"class="sbm-more">
+                                                <a href="#" class="sbm-more">
                                                       <span class="material-symbols-sharp">search</span>
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img fal-img"><img class="fal" src="./images/sandwich-14.png" alt=""></div>
+                                                <div class="sbm-img fal-img"><img class="fal"
+                                                            src="./images/sandwich-14.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>치킨 슬라이스</p>
                                                       <p>닭가슴살로 만든 치킨 슬라이스로<br>즐기는 담백한 맛!</p>
@@ -333,7 +440,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img fal-img"><img class="fal" src="./images/sandwich-18.png" alt=""></div>
+                                                <div class="sbm-img fal-img"><img class="fal"
+                                                            src="./images/sandwich-18.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>베지</p>
                                                       <p>갓 구운 빵과 신선한 8가지 야채로<br>즐기는 깔끔한 한끼</p>
@@ -356,17 +464,20 @@
                               <div class="sbm-slider-container sbm-slider-w">
                                     <div class="sbm-slider-inner">
                                           <div class="sbm-item">
-                                                <div class="sbm-img prem-img"><img class="prem" src="./images/sandwich-10.png" alt=""></div>
+                                                <div class="sbm-img prem-img"><img class="prem"
+                                                            src="./images/sandwich-10.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>쉬림프</p>
-                                                      <p>탱글한 식감이 그대로 살아있는 통새우가<br>5마리 들어가 한 입 베어 먹을 때 마다<br>진짜 새우의 풍미가 가득</p>
+                                                      <p>탱글한 식감이 그대로 살아있는 통새우가<br>5마리 들어가 한 입 베어 먹을 때 마다<br>진짜 새우의 풍미가
+                                                            가득</p>
                                                 </div>
                                                 <a href="#" class="sbm-more">
                                                       <span class="material-symbols-sharp">search</span>
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img prem-img"><img class="prem" src="./images/sandwich-3.png" alt=""></div>
+                                                <div class="sbm-img prem-img"><img class="prem"
+                                                            src="./images/sandwich-3.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>풀드 포크 바비큐</p>
                                                       <p>미국 스타일의 풀드 포크 바비큐가<br>가득 들어간 샌드위치</p>
@@ -376,7 +487,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img prem-img"><img class="prem" src="./images/sandwich-6.png" alt=""></div>
+                                                <div class="sbm-img prem-img"><img class="prem"
+                                                            src="./images/sandwich-6.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>스테이크&치즈</p>
                                                       <p>육즙이 쫙~풍부한 비프 스테이크의<br>풍미가 입안 한가득</p>
@@ -386,7 +498,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img prem-img"><img class="prem" src="./images/sandwich-7.png" alt=""></div>
+                                                <div class="sbm-img prem-img"><img class="prem"
+                                                            src="./images/sandwich-7.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>치킨 베이컨 아보카도</p>
                                                       <p>담백하게 닭가슴살로 만든 치킨 슬라이스와<br>베이컨, 부드러운 아보카도의 만남</p>
@@ -396,7 +509,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img prem-img"><img class="prem" src="./images/sandwich-12.png" alt=""></div>
+                                                <div class="sbm-img prem-img"><img class="prem"
+                                                            src="./images/sandwich-12.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>스파이시 이탈리안</p>
                                                       <p>살라미, 페퍼로니가 입안 한가득!<br>쏘 핫한 이탈리아의 맛</p>
@@ -406,7 +520,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img prem-img"><img class="prem" src="./images/sandwich-11.png" alt=""></div>
+                                                <div class="sbm-img prem-img"><img class="prem"
+                                                            src="./images/sandwich-11.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>치킨 데리야끼</p>
                                                       <p>담백한 치킨 스트립에 달콤짭쪼름한<br>써브웨이 특제 데리야끼 소스와의 환상적인 만남</p>
@@ -429,7 +544,8 @@
                               <div class="sbm-slider-container">
                                     <div class="sbm-slider-inner">
                                           <div class="sbm-item">
-                                                <div class="sbm-img morn-img"><img class="morn" src="./images/morning-2.png" alt=""></div>
+                                                <div class="sbm-img morn-img"><img class="morn"
+                                                            src="./images/morning-2.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>햄, 에그 & 치즈</p>
                                                       <p>푹신한 오믈렛과 햄의<br>가장 클래식한 조화</p>
@@ -439,7 +555,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img morn-img"><img class="morn" src="./images/morning-3.png" alt=""></div>
+                                                <div class="sbm-img morn-img"><img class="morn"
+                                                            src="./images/morning-3.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>웨스턴, 에그 & 치즈</p>
                                                       <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작</p>
@@ -449,7 +566,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img morn-img"><img class="morn" src="./images/morning-4.png" alt=""></div>
+                                                <div class="sbm-img morn-img"><img class="morn"
+                                                            src="./images/morning-4.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>베이컨, 에그 & 치즈</p>
                                                       <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사</p>
@@ -459,7 +577,8 @@
                                                 </a>
                                           </div>
                                           <div class="sbm-item">
-                                                <div class="sbm-img morn-img"><img class="morn" src="./images/morning-1.png" alt=""></div>
+                                                <div class="sbm-img morn-img"><img class="morn"
+                                                            src="./images/morning-1.png" alt=""></div>
                                                 <div class="sbm-txt">
                                                       <p>스테이크, 에그 & 치즈</p>
                                                       <p>육즙 가득 비프 스테이크로<br>든든한 아침 식사</p>
@@ -478,8 +597,8 @@
                                           </div>
                                     </div>
                               </div>
-                              
-                        </div> 
+
+                        </div>
                   </div>
             </section>
             <!-- section02_subway-content -->
@@ -510,10 +629,13 @@
                                                 <div class="sb-news-list">
                                                       <ul>
                                                             <li><a href="#">써브웨이와 함께하는 TVING 오리지널 '유미의 세포들 2'</a></li>
-                                                            <li><a href="#" class="news-2">써브웨이와 함께하는 SBS 금토드라마 '소방서 옆 경찰서'</a></li>
+                                                            <li><a href="#" class="news-2">써브웨이와 함께하는 SBS 금토드라마 '소방서 옆
+                                                                        경찰서'</a></li>
                                                             <li><a href="#" class="news-3">시스템 안정화를 위한 서버 점검 안내</a></li>
                                                       </ul>
-                                                      <p class="news-more">more<span class="material-symbols-sharp news-more-icon">keyboard_double_arrow_right</span></p>
+                                                      <p class="news-more">more<span
+                                                                  class="material-symbols-sharp news-more-icon">keyboard_double_arrow_right</span>
+                                                      </p>
                                                 </div>
                                           </div>
                                     </div>
@@ -521,8 +643,10 @@
                                     <div class="sb-banner-sponsor">
                                           <div class="spon-slider">
                                                 <div class="spon-slider-inner">
-                                                      <div class="spon-bx"><img src="./images/sb-sponsor-1.jpg" alt=""></div>
-                                                      <div class="spon-bx"><img src="./images/sb-sponsor-2.jpg" alt=""></div>
+                                                      <div class="spon-bx"><img src="./images/sb-sponsor-1.jpg" alt="">
+                                                      </div>
+                                                      <div class="spon-bx"><img src="./images/sb-sponsor-2.jpg" alt="">
+                                                      </div>
                                                 </div>
                                           </div>
                                     </div>
@@ -603,69 +727,97 @@
                         </div>
                   </div>
             </footer>
+            
       </div>
       <script src="./script/jquery-3.6.1.js"></script>
       <script src="./script/jquery-ui.js"></script>
       <script src="./script/jquery.bxslider.js"></script>
-      <script src="https://kit.fontawesome.com/00632e81cf.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="./script/common.js"></script>
       <script>
-            const mainSlider =  $('.bxslider').bxSlider({
+            const mainSlider = $('.bxslider').bxSlider({
                   auto: true,
                   autoControls: true,
                   stopAutoOnClick: true,
                   pager: true,
-                  controls : false,
-                  autoControls : true,
-                  speed : 800,
-                  touchEnabled : true
+                  controls: false,
+                  autoControls: true,
+                  speed: 800,
+                  touchEnabled: true
+            });
+            const mobileSlider = $('.mobile-slider').bxSlider({
+                  auto: true,
+                  autoControls: false,
+                  stopAutoOnClick: true,
+                  pager: true,
+                  controls: false,
+                  speed: 500,
+                  touchEnabled: true
             });
 
-            $('.sbm-list li:first-child').addClass('active');
-            $('.sbm-slider-w .sbm-next').addClass('slide-off');
-            $('.sbm-slider-w .sbm-prev').addClass('slide-off');
 
-            $('.sbm-list li').on('click', function (event) {
-                  event.preventDefault();
+            if (window.matchMedia('screen and (max-width: 1470px)').matches) {
+                  
+            }
+            $('.sbm-list li:first-child').addClass('active');
+                  resetSbm();
+                  $('.sbm-list li').on('click', function (event) {
                   let num = $(this).index();
-                  $('.sbm-slider-container').css({
-                        'left' : '150%',
-                        'opacity' : '0'
+                  $('.sbm-slider-container').animate({
+                        'left': '150%',
+                        'opacity': '0'
                   });
-                  $(`.sbm-slider-container:nth-child(${num+1})`).animate({
-                        'left' : '50%',
-                        'opacity' : '1'
+                  $(`.sbm-slider-container:nth-child(${num + 1})`).animate({
+                        'left': '50%',
+                        'opacity': '1'
                   })
+                  resetSbm();
                   $(this).siblings().removeClass('active');
                   $(this).addClass('active');
             })
 
-            function rightBtn(event) {
-                  $('.sbm-slider-w>.sbm-slider-inner').css({ 'left': '-97%', 'transition': '0.4s' })
-                  $('.sbm-slider-w .sbm-next').addClass('slide-on');
-                  $('.sbm-slider-w .sbm-prev').addClass('slide-on');
-                  $('.sbm-slider-w .sbm-next').removeClass('slide-off');
-                  $('.sbm-slider-w .sbm-prev').removeClass('slide-off');
-            }
-            $('.sbm-next').on('click', function () {
-                  rightBtn();
-            });
-
-            function leftBtn() {
-                  $('.sbm-slider-w>.sbm-slider-inner').css({ 'left': '0', 'transition': '0.4s' })
-                  $('.sbm-slider-w .sbm-next').removeClass('slide-on');
-                  $('.sbm-slider-w .sbm-prev').removeClass('slide-on');
-                  $('.sbm-slider-w .sbm-next').addClass('slide-off');
-                  $('.sbm-slider-w .sbm-prev').addClass('slide-off');
-            }
-            $('.sbm-prev').on('click', function () {
-                  leftBtn();
-            });
-
-            const sponSlider =  $('.spon-slider-inner').bxSlider({
-                  touchEnabled : true,
-                  controls : false
+            $('.sbm-slider-w .sbm-next').on('click', function () {
+                  $('.sbm-slider-w > .sbm-slider-inner').css({ 'left': '-97%', 'transition': '0.4s' });
+                  $('.sbm-slider-w .sbm-next').addClass('off');
+                  $('.sbm-slider-w .sbm-next').removeClass('on');
+                  $('.sbm-slider-w .sbm-prev').addClass('on');
+                  $('.sbm-slider-w .sbm-prev').removeClass('off');
             })
+            $('.sbm-slider-w .sbm-prev').on('click', function () {
+                  $('.sbm-slider-w > .sbm-slider-inner').css({ 'left': '0', 'transition': '0.4s' });
+                  $('.sbm-slider-w .sbm-prev').addClass('off');
+                  $('.sbm-slider-w .sbm-prev').removeClass('on');
+                  $('.sbm-slider-w .sbm-next').addClass('on');
+                  $('.sbm-slider-w .sbm-next').removeClass('off');
+            })
+
+            function resetSbm() {
+                  $('.sbm-slider-w .sbm-slider-inner').css({ 'left': '0' });
+                  $('.sbm-slider-w .sbm-prev').addClass('off');
+                  $('.sbm-slider-w .sbm-prev').removeClass('on');
+                  $('.sbm-slider-w .sbm-next').addClass('on');
+                  $('.sbm-slider-w .sbm-next').removeClass('off');
+            }
+
+            const sponSlider = $('.spon-slider-inner').bxSlider({
+                  touchEnabled: true,
+                  controls: false
+            })
+
+            const slideMainList = document.querySelectorAll('.slide-lnb > ul > li > a');
+
+            slideMainList.forEach((mainLi, index) => {
+                  mainLi.addEventListener('click', (event) => {
+                        const slideSubList = document.querySelectorAll('.slide-sub');
+
+                  })
+            })
+            // slideMenuBtn
+            $('.mobile-menu-btn').on('click', function(){
+                  $('.mobile-menu').css({'left': 0,  'transition' : '0.3s'});
+            })
+
+            // $('#mobile-lnb').accordion();
       </script>
 </body>
 
