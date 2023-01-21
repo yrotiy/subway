@@ -26,31 +26,48 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Pretendard-Regular';
 }
 
 body {
+      min-width: 640px;
       font-size: 16px;
-      font-family: 'Pretendard-Regular';
       overflow-x: hidden;
 }
 
-dl, ol, ul {
-      margin-bottom: 0;
-}
-
 li {
-      list-style: none;
-      cursor: pointer;
+      display: block;
+      margin: 0;
+      padding: 0;
 }
 
 a {
       all: unset;
+      margin: 0;
+      padding: 0;
       cursor: pointer;
 }
 
 a:hover {
-      color: var(--text-black);
+      color: unset;
 }
+
+ul, ol, dl {
+      display: block;
+      list-style-type: none;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 0;
+      margin-bottom: 0;
+}
+
+p {
+      margin: 0;
+      padding: 0;
+}
+
 
 /* ======== root ========*/
 :root {
