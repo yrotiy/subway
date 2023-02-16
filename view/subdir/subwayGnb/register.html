@@ -295,42 +295,49 @@
                                                       <label for="userName">이름</label>
                                                       <input type="text" id="userName" placeholder="이름 입력" required autocomplete="off">
                                                 </form>
-                                                <p class="userName-err">2글자 이상 문자로 입력하세요.</p>
+                                                <p class="userErr userName-err">2글자 이상 문자로 입력하세요.</p>
                                           </div>
                                           <div>
                                                 <form action="" class="userEmail-form">
                                                       <label for="userEmail">이메일</label>
-                                                      <input type="text" id="userEmail" placeholder="이메일 입력" required autocomplete="off">
+                                                      <input class="beforCheckInput" type="text" id="userEmail" placeholder="이메일 입력" required autocomplete="off">
                                                 </form>
-                                                <p class="userEmail-err">올바른 이메일 주소가 아닙니다.</p>
+                                                <p class="userErr userEmail-err">올바른 이메일 주소가 아닙니다.</p>
+                                                <p class="userAlert userEmail-alert">먼저 이름을 입력하세요.</p>
                                           </div>
                                           <div>
                                                 <form action="" class="userPhone-form">
                                                       <label for="userPhone">전화번호</label>
-                                                      <input type="tel" id="userPhone" placeholder="전화번호 입력" required autocomplete="off">
+                                                      <input class="beforCheckInput" type="tel" id="userPhone" placeholder="전화번호 입력" required autocomplete="off">
                                                 </form>
-                                                <p class="userPhone-err">유효한 전화번호를 입력하세요.</p>
+                                                <p class="userErr userPhone-err">유효한 전화번호를 입력하세요.</p>
+                                                <p class="userAlert userPhone-alert">먼저 이메일을 입력하세요.</p>
                                           </div>
                                           <div>
                                                 <form action="" class="userId-form">
                                                       <label for="userId">아이디</label>
-                                                      <input type="text" id="userId" placeholder="아이디 입력" required autocomplete="off">
+                                                      <input class="beforCheckInput" type="text" id="userId" placeholder="아이디 입력" required autocomplete="off">
                                                 </form>
-                                                <p class="userId-err">5글자 이상 영문자로 입력하세요.</p>
+                                                <p class="userErr userId-err">5글자 이상 영문자로 입력하세요.</p>
+                                                <p class="userAlert userId-alert">먼저 전화번호를 입력하세요.</p>
                                           </div>
                                           <div>
                                                 <form action="" class="userPw-form">
                                                       <label for="userPw">비밀번호</label>
-                                                      <input type="password" id="userPw" placeholder="비밀번호 입력 (영문자,숫자,특수문자를 포함한 8자리 이상)" required autocomplete="off">
+                                                      <input class="beforCheckInput" type="password" id="userPw" placeholder="비밀번호 입력 (영문자,숫자,특수문자를 포함한 8자리 이상)" required autocomplete="off">
+                                                      <span class="material-symbols-sharp show-pw"></span>
                                                 </form>
-                                                <p class="userPw-err">조건에 충족하지 않는 비밀번호입니다.<br>다시 입력하세요.</p>
+                                                <p class="userErr userPw-err">조건에 충족하지 않는 비밀번호입니다.<br>다시 입력하세요.</p>
+                                                <p class="userAlert userPw-alert">먼저 아이디를 설정하세요.</p>
                                           </div>
                                           <div>
                                                 <form action="" class="userPwCheck-form">
                                                       <label for="userPwCheck">비밀번호 확인</label>
-                                                      <input type="password" id="userPwCheck" placeholder="비밀번호 확인" required autocomplete="off">
+                                                      <input class="beforCheckInput" type="password" id="userPwCheck" placeholder="비밀번호 확인" required autocomplete="off">
+                                                      <span class="material-symbols-sharp show-pw"></span>
                                                 </form>
-                                                <p class="userPwCheck-err">이전에 입력한 비밀번호 같지 않습니다.</p>
+                                                <p class="userErr userPwCheck-err">이전에 입력한 비밀번호 같지 않습니다.</p>
+                                                <p class="userAlert userPwCheck-alert">먼저 비밀번호를 설정하세요</p>
                                           </div>
                                     </div>
                                     <button id="registerBtn">회원가입</button>
@@ -397,109 +404,120 @@
                   }
             })
 
+            // regexHandle
             const regexHandle = (regex, input, event) => {
-                  const inputValue = input.value;
                   const checked = regex.test(input.value);
-                  const userErr = $(input).parent().siblings();
-                  const label = $(input).siblings();
+                  const inputValue = input.value;
+                  const userErr = $(input).parent().siblings().first();
+                  const userAlert = $(input).parent().siblings().last();
+                  const label = $(input).siblings().first();
 
                   if (!checked && inputValue) {
                         userErr.css('display', 'block');
                         label.addClass('invalid');
-                        label.removeClass('active');
                         $(input).addClass('invalid');
-                        $(input).removeClass('active');
                   }
                   else {
                         userErr.css('display', 'none');
+                        label.removeClass('invalid');
+                        $(input).removeClass('invalid');
                         label.addClass('valid');
-                        label.removeClass('invalid', 'active');
                         $(input).addClass('valid');
-                        $(input).removeClass('invalid', 'active');
+
                   }
                   if(inputValue.length === 0) {
-                        console.log('empty!', input);
                         userErr.css('display', 'none');
                         label.removeClass('valid');
-                        label.addClass('active');
                         $(input).removeClass('valid');
-                        $(input).addClass('active');
                   }
             }
 
             $('#userName').on('input', (event) => {
                   const regex = /^[가-힣]{2,4}|^[a-z]{2,30}/gmi;
                   const input = event.target;
-
                   regexHandle(regex, input);
             })
 
             $('#userEmail').on('input', (event) => {
                   const regex = /[a-z\d.+-]+@[A-Z\d]+\.([a-z]{2,8})(\.[a-z]{2,8})?/gmi;
                   const input = event.target;
-                  regexHandle(regex, input);
+                  moveNext(regex, input);
             })
 
             $('#userPhone').on('input', (event) => {
                   const regex = /\(?\d{2,3}\)?[- ]?\d{4}[- ]?\d{4}/gm;
                   const input = event.target;
-                  regexHandle(regex, input);
+                  moveNext(regex, input);
             })
 
             $('#userId').on('input', (event) => {
                   const regex = /^\w{5,12}(\d|\+|\$)?/gmi;
                   const input = event.target;
-                  regexHandle(regex, input);
+                  moveNext(regex, input);
             })
-
-
 
             $('#userPw').on('input', (event) => {
                   const regex = /(?=.*\d)(?=.*[a-zA-Z])(?=.*[%$!])\w+/gm;
                   const input = event.target;
-                  regexHandle(regex, input);
-            })
-
-            $('#userPwCheck').on('input', (event) => {
+                  moveNext(regex, input);
 
             })
 
-            // 
+            // userPwCheck
             document.querySelector('#userPwCheck').addEventListener('input', function (event) {
                   const input = event.target;
                   const inputValue = input.value;
                   const pw = document.querySelector('#userPw');
                   const pwCheck = document.querySelector('#userPwCheck');
-                  const userErr = $(input).parent().siblings();
-                  const label = $(input).siblings();
+                  const userErr = $(input).parent().siblings().first();
+                  const userAlert = $(input).parent().siblings().last();
+                  const label = $(input).siblings().first();
 
                   if (pw.value !== pwCheck.value) {
-                        userErr.css('display', 'block');
-                        label.addClass('invalid');
-                        label.removeClass('active');
-                        $(input).addClass('invalid');
-                        $(input).removeClass('active');
+                        userAlert.css('display', 'block');
                   } else {
-                        userErr.css('display', 'none');
-                        label.addClass('valid');
-                        label.removeClass('invalid', 'active');
-                        $(input).addClass('valid');
-                        $(input).removeClass('invalid', 'active');
+                        userAlert.css('display', 'none');
                   }
                   if(inputValue.length === 0) {
-                        console.log('empty!', input);
                         userErr.css('display', 'none');
-                        label.removeClass('valid');
+                        label.removeClass('invalid');
                         label.addClass('active');
-                        $(input).removeClass('valid');
+                        $(input).removeClass('invalid');
                         $(input).addClass('active');
                   }
-                  // 비밀번호를 설정하지 않고 확인을 눌렀을 때
-                  // if(pw.value.length === 0) {
+            })
 
-                  // }
+            // 순차적 입력
+            function moveNext(regex, input) {
+                  const registerInputs = document.querySelectorAll('.beforCheckInput');
+                  registerInputs.forEach((input) => {
+                        input.addEventListener('input', function () {
+                              let checkBefore = input.parentElement.parentElement.previousElementSibling.children[0].children[1].value;
+                              const userAlert = $(input).parent().siblings().last();
+                              const label = $(input).siblings().first();
+                              if (checkBefore.length === 0) {
+                                    userAlert.css('display', 'block');
+                                    label.addClass('invalid');
+                                    label.removeClass('active');
+                                    $(input).addClass('invalid');
+                                    $(input).removeClass('active');
+                              } else {
+                                    userAlert.css('display', 'none');
+                                    regexHandle(regex, input);
+                              }
+                        })
+                  })
+            }
 
-                  console.log(input.length);
+            // showPw
+            $('.show-pw').on('click', function(){
+                  $(this).toggleClass('activePw');
+                  let pw = $(this).siblings()[1];
+                  if($(this).hasClass('activePw')) {
+                        $(pw).attr('type', 'text');
+                  } else {
+                        $(pw).attr('type', 'password');
+                  }
             })
       </script>
 </body>

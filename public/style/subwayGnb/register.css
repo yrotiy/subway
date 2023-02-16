@@ -110,6 +110,9 @@ section#register {
       margin-bottom: 50px;
 }
 
+.register-contents form {
+      position: relative;
+}
 
 .register-contents label {
       display: block;
@@ -134,8 +137,8 @@ section#register {
 }
 
 .register-contents input {
-      display: block;
       width: 100%;
+      display: block;
       padding: 15px 20px;
       margin-bottom: 8px;
       border-radius: 0;
@@ -158,12 +161,29 @@ section#register {
       color: #66666650;
 }
 
-.register-contents > div > p {
+.userErr, .userAlert {
       font-size: 15.5px;
       color: crimson;
       line-height: 22px;
       display: none;
 }
+
+.show-pw {
+      position: absolute;
+      bottom: 12px;
+      right: 25px;
+      width: 22px;
+      height: 22px;
+      background-image: url('/images/show_off.png');
+      background-size: cover;
+      cursor: pointer;
+}
+
+.show-pw.activePw {
+      background-image: url('/images/show_on.png');
+      transition: 0.2s;
+}
+
 
 #registerBtn {
       width: 300px;
