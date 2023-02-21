@@ -145,5 +145,25 @@ document.querySelectorAll('.sbuMenu-tag-bx > button').forEach(btn => {
       })
 })
 
+const options = {
+      root : null,
+      rootMargin : '0px',
+      threshold: .25,
+}
+
+const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                  entry.target.classList.add('active');
+            } else {
+                  entry.target.classList.remove('active');
+            }
+      });
+}, options);
+
+const orderTipImgs = document.querySelectorAll('.orderTipImg');
+
+orderTipImgs.forEach(li => observer.observe(li));
+
 
 

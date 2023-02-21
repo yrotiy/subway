@@ -1,0 +1,31 @@
+.sub-hd {
+      width: 100%;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+}
+
+.sub-hd-container {
+      width: 1180px;
+      margin: auto;
+}
+
+.sub-hd-lnb a {
+      color: var(--text-gray);
+}
+
+.sub-hd-lnb a::after {
+      background-color: var(--primary-color);
+}
+
+.sub-hd-lnb a:hover {
+      color: var(--primary-color);
+      transition: 0.3s;
+}
+
+.sub-hd-lnb a.subHd-active {
+      color: var(--primary-color);
+}
+
+.sub-hd-lnb a.subHd-active::after {
+      width: 100%;
+}

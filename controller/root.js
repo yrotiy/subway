@@ -15,6 +15,12 @@ const register = (req, res) => {
 const mySubway = (req, res) => {
       res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'subwayGnb' ,'mySubway.html'))
 }
+const searchId = (req, res) => {
+      res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'subwayGnb' ,'searchId.html'))
+}
+const searchPw = (req, res) => {
+      res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'subwayGnb' ,'searchPw.html'))
+}
 
 // MAIN MENU 01_menuSubway
 const sandwich = (req, res) => {
@@ -58,6 +64,8 @@ const appUtilizationMenu = (req, res) => {
       res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'utilizationSubway' ,'appUtilizationMenu.html'))
 }
 
-module.exports = { index, login, register, mySubway,
-            sandwich, unit, salad, morning, smile, catering, 
-            subwayUtilization, groupMenuUtilization, freshInfo, appUtilizationMenu}
+module.exports = { 
+      index, login, register, mySubway, searchId, searchPw,
+      sandwich, unit, salad, morning, smile, catering, 
+      subwayUtilization, groupMenuUtilization, freshInfo, appUtilizationMenu
+}

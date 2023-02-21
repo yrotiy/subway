@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { index, login, register, mySubway,
+const { index, login, register, mySubway, searchId, searchPw,
       sandwich, unit, salad, morning, smile, catering, 
       subwayUtilization, groupMenuUtilization, freshInfo, appUtilizationMenu} = require('../controller/root');
 
@@ -11,6 +11,8 @@ router.get('/', index);
 router.get('/login', login);
 router.get('/register', register);
 router.get('/mySubway', mySubway);
+router.get('/searchId', searchId);
+router.get('/searchPw', searchPw);
 
 // MAIN MENU 01_menuSubway
 router.get('/sandwich', sandwich);

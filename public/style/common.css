@@ -396,11 +396,6 @@
       color: var(--primary-color);
 }
 
-.mb-lnb-header:hover .mb-lnb-title {
-      transform: translateX(5px);
-      transition: 0.3s;
-}
-
 .mb-lnb-title {
       display: flex;
       align-items: center;
@@ -410,6 +405,10 @@
       display: block;
       width: 30px;
       margin-right: 10px;
+}
+
+.mb-lnb-title > h3.mainMenu-active {
+      color: var(--primary-color);
 }
 
 .mb-lnb-btn > span {
@@ -449,6 +448,11 @@
       font-size: 15px;
 }
 
+.mb-lnb-body a.subMenu-active {
+      color: var(--primary-color);
+      text-decoration: underline;
+}
+
 .mb-lnb-body a:hover {
       color: var(--primary-color);
       text-decoration: underline;
@@ -457,7 +461,6 @@
 /* mb-finish */
 #mb-finish {
       position: relative;
-      color: var(--primary-color);
 }
 
 #mb-finish::before {
@@ -481,9 +484,6 @@
             opacity: 1;
       }
 }
-
-
-
 
 /* mobile-slider */
 .mobile-container .bx-wrapper {

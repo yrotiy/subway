@@ -56,11 +56,11 @@
       transition: 0.3s;
 }
 
-/* .sub-hd-lnb a:hover::after {
+.sub-hd-lnb a:hover::after {
       width: 100%;
 }
 
-.sub-hd-lnb a:hover {
+/* .sub-hd-lnb a:hover {
       color: var(--point-color);
       transition: 0.3s;
 }

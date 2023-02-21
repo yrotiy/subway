@@ -10,6 +10,7 @@
       <link rel="apple-touch-icon" href="/images/subway-favicon/favicon-1.png" />
       <link rel="stylesheet" href="/style/reset.css">
       <link rel="stylesheet" href="/style/common.css">
+      <link rel="stylesheet" href="/style/subway/subHdLnb.css">
       <link rel="stylesheet" href="/style/utilizationSubway/appUtilizationMenu.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
@@ -25,8 +26,8 @@
                               </a>
                               <div class="gnb">
                                     <ul>
-                                          <li><a href="">로그인</a></li>
-                                          <li><a href="">회원가입</a></li>
+                                          <li><a href="/login">로그인</a></li>
+                                          <li><a href="/register">회원가입</a></li>
                                     </ul>
                               </div>
                               <div class="mbMenu-openBtn">
@@ -101,13 +102,13 @@
                         <a href="#"><img src="/images/mobile-banner-5.jpg" alt="" importance="high"></a>
                   </div>
                   <div class="mobile-tabs">
-                        <a href="" class="mobile-tab">
+                        <a href="/FAST-SUB" class="mobile-tab">
                               <p>FAST-SUB</p>
                               <p>매장 선주문</p>
                               <div class="mobile-tab-icon"><img src="/images/mobile-tab-1.png" alt=""></div>
                         </a>
                         <span class="mbt-bdr"></span>
-                        <a href="" class="mobile-tab">
+                        <a href="/HOME-SUB" class="mobile-tab">
                               <p>HOME-SUB</p>
                               <p>배달 주문</p>
                               <div class="mobile-tab-icon mobile-tab-icon-2"><img src="/images/mobile-tab-2.png" alt="">
@@ -120,32 +121,25 @@
                         <div class="mb-menu-hd">
                               <a href=""><img src="/images/mobile-menu-logo.jpg" alt=""></a>
                               <div class="mb-menu-setting">
-                                    <a class="mb-menu-settingBtn" href=""><span
-                                                class="material-symbols-sharp">settings</span></a>
+                                    <a class="mb-menu-settingBtn" href="#"><span class="material-symbols-sharp">settings</span></a>
                                     <span class="material-symbols-sharp mb-menu-closeBtn">close</span>
                               </div>
                         </div>
                         <div class="mobile-gnb">
                               <p>로그인해주세요.<br>아직 회원이 아니신가요?</p>
                               <ul>
-                                    <li><a href="">로그인</a></li>
-                                    <li><a href="">회원가입</a></li>
+                                    <li><a href="/login">로그인</a></li>
+                                    <li><a href="/register">회원가입</a></li>
                               </ul>
                         </div>
                         <div class="mobile-myMenu">
                               <ul>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-1.png"
-                                                            alt=""></span>FAST-SUB</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-2.png"
-                                                            alt=""></span>HOME-SUB</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-3.png"
-                                                            alt=""></span>단체주문</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-4.png"
-                                                            alt=""></span>써브카드</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-5.png"
-                                                            alt=""></span>쿠폰</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-6.png"
-                                                            alt=""></span>e-Gift</a></li>
+                                    <li><a href="/FAST-SUB"><span class="myMenu-i"><img src="/images/mb-myMenu-1.png" alt=""></span>FAST-SUB</a></li>
+                                    <li><a href="/HOME-SUB"><span class="myMenu-i"><img src="/images/mb-myMenu-2.png" alt=""></span>HOME-SUB</a></li>
+                                    <li><a href="/groupOrder"><span class="myMenu-i"><img src="/images/mb-myMenu-3.png" alt=""></span>단체주문</a></li>
+                                    <li><a href="subwayCard"><span class="myMenu-i"><img src="/images/mb-myMenu-4.png" alt=""></span>써브카드</a></li>
+                                    <li><a href="/subwayCupon"><span class="myMenu-i"><img src="/images/mb-myMenu-5.png" alt=""></span>쿠폰</a></li>
+                                    <li><a href="/subwayGift"><span class="myMenu-i"><img src="/images/mb-myMenu-6.png" alt=""></span>e-Gift</a></li>
                               </ul>
                         </div>
                         <!-- mobile-lnb -->
@@ -162,8 +156,8 @@
                                     </button>
                                     <div class="mb-lnb-body">
                                           <ul>
-                                                <li id="mb-finish"><a href="/sdw">샌드위치</a></li>
-                                                <li id="mb-finish"><a href="/wrap">랩 · 기타</a></li>
+                                                <li id="mb-finish"><a href="/sandwich">샌드위치</a></li>
+                                                <li id="mb-finish"><a href="/unit">랩 · 기타</a></li>
                                                 <li id="mb-finish"><a href="/salad">샐러드</a></li>
                                                 <li id="mb-finish"><a href="/morning">아침메뉴</a></li>
                                                 <li id="mb-finish"><a href="/smile">스마일썹</a></li>
@@ -184,8 +178,8 @@
                                     </button>
                                     <div class="mb-lnb-body">
                                           <ul>
-                                                <li><a href="/sub-use">써브웨이 이용방법</a></li>
-                                                <li><a href="/gm-use">단체메뉴 이용방법</a></li>
+                                                <li><a href="/subwayUtilization">써브웨이 이용방법</a></li>
+                                                <li><a href="/groupMenuUtilization">단체메뉴 이용방법</a></li>
                                                 <li id="mb-finish"><a href="/freshInfo">신선한 재료 소개</a></li>
                                                 <li><a href="/appUtilizationMenu">App 이용방법</a></li>
                                           </ul>
@@ -225,7 +219,7 @@
                                           <ul>
                                                 <li><a href="/histroySubway">써브웨이 역사</a></li>
                                                 <li><a href="/promiseSubway">단체메뉴 약속</a></li>
-                                                <li><a href="artistSubway">샌드위치 아티스트 지원</a></li>
+                                                <li><a href="/artistSubway">샌드위치 아티스트 지원</a></li>
                                                 <li><a href="/storeSearch">매장찾기</a></li>
                                           </ul>
                                     </div>
@@ -332,6 +326,7 @@
       <script src="/script/jquery-ui.js"></script>
       <script src="/script/jquery.bxslider.js"></script>
       <script src="/script/subway/common.js"></script>
+      <script src="/script/subway/utilizationSubway.js"></script>
 </body>
 
 </html>
