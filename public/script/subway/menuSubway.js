@@ -12,7 +12,7 @@ $('.menu-tag-bx li').on('click', function (event) {
 })
 
 $(function () {
-      let url = window.location.href.split('3000')[1];
+      let url = window.location.href.split('app/')[1];
       let ary = [];
       const subMenu = document.querySelectorAll('.sub-menu a');
       const subHdLnb = document.querySelectorAll('.sub-hd-lnb a');
