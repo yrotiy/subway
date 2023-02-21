@@ -55,3 +55,4 @@ mbLnbBtns.forEach(btn => {
             panel.classList.toggle('active');
       })
 })
+

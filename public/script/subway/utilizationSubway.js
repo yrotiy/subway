@@ -1,16 +1,3 @@
-$('.menu-list-container:not(:first-child)').hide();
-$('.menu-tag-bx li:first-child').addClass('active');
-
-$('.menu-tag-bx li').on('click', function (event) {
-      event.preventDefault();
-      let num = $(this).index();
-      $('.menu-list-container').hide();
-      $(`.menu-list-container:nth-child(${num + 1})`).show();
-      $('.menu-item').addClass('show');
-      $(this).siblings().removeClass('active');
-      $(this).addClass('active');
-})
-
 $(function () {
       let url = window.location.href.split('3000')[1];
       let ary = [];
@@ -23,8 +10,28 @@ $(function () {
                   subMenu[i].classList.add('subMenu-active');
                   let mainMenu = subMenu[i].parentElement.parentElement.parentElement;
                   mainMenu.classList.add('mainMenu-active');
-                  subHdLnb[i].classList.add('subHd-active');
+                  subHdLnb[i-6].classList.add('subHd-active');
                   console.log(i);
             }
       }
 })
+
+const options = {
+      root : null,
+      rootMargin : '0px',
+      threshold: .25,
+}
+
+const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                  entry.target.classList.add('active');
+            } else {
+                  entry.target.classList.remove('active');
+            }
+      });
+}, options);
+
+const orderTipImgs = document.querySelectorAll('.orderTipImg');
+
+orderTipImgs.forEach(li => observer.observe(li));

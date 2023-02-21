@@ -103,6 +103,10 @@
       font-weight: 600;
 }
 
+.mainMenu-active {
+      color: var(--primary-color);
+}
+
 .lnb > ul > li:hover > a {
       color:var(--primary-color);
 }
@@ -126,12 +130,13 @@
       margin-top: 30px;
 }
 
-#finish {
-      color: var(--primary-color);
+.sub-menu a:hover{
+      color:var(--primary-color);
+      text-decoration: underline;
 }
 
-.sub-menu li:hover{
-      color:var(--primary-color);
+.sub-menu a.subMenu-active {
+      color: var(--primary-color);
       text-decoration: underline;
 }
 
@@ -146,6 +151,7 @@
       z-index: 2;
 }
 
+/* MOBILE */
 .mbMenu-openBtn {
       position: absolute;
       top: 50%;

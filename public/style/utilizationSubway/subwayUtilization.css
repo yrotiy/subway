@@ -9,73 +9,25 @@
       margin: auto;
 }
 
-.sub-hd-lnb {
-      width: 650px;
-      margin: auto;
-}
-.sub-hd-lnb ul {
-      display: flex;
-      justify-content: space-evenly;
-}
-
-.sub-hd-lnb li {
-      position: relative;
-      display: flex;
-      align-items: center;
-      color: #999999;
-}
-
-.sub-hd-lnb li:hover {
-      color: var(--primary-color);
-}
-
-.sub-hd-lnb li::before {
-      content: "";
-      width: 0;
-      height: 3px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      display: block;
-      background-color: var(--primary-color);
-      transition: 0.4s;
-}
-
-.sub-hd-lnb li:nth-child(1):hover::before,
-.sub-hd-lnb li:nth-child(2):hover::before {
-      width: 115px;
-}
-
-.sub-hd-lnb li:nth-child(3):hover::before {
-      width: 105px;
-}
-
-.sub-hd-lnb li:nth-child(4):hover::before {
-      width: 90px;
-}
-
-.sub-hd-lnb li:not(:last-child):after {
-      content: "";
-      width: 4px;
-      height: 4px;
-      display: block;
-      border-radius: 50%;
-      margin-left: 25px;
-      background-color: #dddddd;
-}
-
-.sub-hd-lnb li:nth-child(1) {
-      color: var(--primary-color);
-}
-
-.sub-hd-lnb li:nth-child(1)::before {
-      width: 115px;
-}
-
 .sub-hd-lnb a {
-      display: block;
-      line-height: 56px;
-      height: 56px;
+      color: var(--text-gray);
+}
+
+.sub-hd-lnb a::after {
+      background-color: var(--primary-color);
+}
+
+.sub-hd-lnb a:hover {
+      color: var(--primary-color);
+      transition: 0.3s;
+}
+
+.sub-hd-lnb a.subHd-active {
+      color: var(--primary-color);
+}
+
+.sub-hd-lnb a.subHd-active::after {
+      width: 100%;
 }
 
 /* title */
@@ -295,7 +247,7 @@
       height: 420px;
       position: absolute;
       top: 220px;
-      right: 400px;
+      right: 20%;
       background-color: var(--white-color);
       border: 1px solid #dddddd;
 }
@@ -478,7 +430,7 @@
       opacity: 0;
 }
 
-.orderTipAni {
+.orderTipImg.active {
       right: 0;
       opacity: 1;
       transition: 0.5s;
@@ -599,4 +551,23 @@
 /* 써브웨이 클럽 */
 .orderTip-item:nth-child(3) .orderTip-top{
       background-image: url('/images/orderTipBg-3.jpg');
+}
+
+/* 매장에서 주문하기 */
+@media screen and (max-width: 1600px) {
+      .storeOrder-slider-controls {
+            width: 85%;
+      }
+      .storeOrder-stepPanel {
+            top: 220px;
+            right: 15%;
+      }
+}
+
+@media screen and (max-width: 1300px) {
+      .sub-hd,
+      .subTitle,
+      #subway-use {
+            display: none;
+      }
 }

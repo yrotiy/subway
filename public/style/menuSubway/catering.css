@@ -10,11 +10,28 @@ body {
       background-color: #fa8306;
 }
 
-.sub-hd-bg {
+.sub-hd-lnb a {
+      color: var(--white-color);
+}
+
+.sub-hd-lnb a::after {
+      background-color: var(--point-color);
+}
+
+.sub-hd-lnb a:hover {
+      color: var(--point-color);
+      transition: 0.3s;
+}
+
+.sub-hd-lnb a.subHd-active {
+      color: var(--point-color);
+}
+
+.sub-hd-lnb a.subHd-active::after {
       width: 100%;
-      height: 380px;
-      position: absolute;
-      left: 0;
+}
+
+.sub-hd-bg {
       background-position: center center;
 }
 
@@ -51,97 +68,6 @@ body {
       }
 }
 
-/* sub-hd-lnb */
-.sub-hd-lnb-container {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      border-bottom: 1px solid #ffffff48;
-}
-
-.sub-hd-lnb-container.click {
-      background-color: var(--primary-color);
-      transition: 0.4s;
-}
-
-.sub-hd-lnb {
-      width: 650px;
-      margin: auto;
-}
-
-.sub-hd-lnb ul {
-      display: flex;
-      justify-content: space-evenly;
-}
-
-.sub-hd-lnb li {
-      position: relative;
-      display: flex;
-      align-items: center;
-      color: var(--white-color);
-}
-
-.sub-hd-lnb li:hover {
-      color: var(--point-color);
-}
-
-.sub-hd-lnb li::before {
-      content: "";
-      width: 0;
-      height: 3px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      display: block;
-      background-color: var(--point-color);
-      transition: 0.4s;
-}
-
-.sub-hd-lnb li::before {
-      background-color: var(--point-color);
-}
-
-.sub-hd-lnb li:not(:nth-child(3)):hover::before {
-      width: 55px;
-}
-
-.sub-hd-lnb li:nth-child(3):hover::before {
-      width: 40px;
-}
-
-.sub-hd-lnb li:nth-child(6) {
-      color: var(--point-color);
-}
-
-.sub-hd-lnb li:nth-child(6)::before {
-      width: 55px;
-}
-
-.sub-hd-lnb li:not(:last-child):after {
-      content: "";
-      width: 4px;
-      height: 4px;
-      display: block;
-      border-radius: 50%;
-      margin-left: 25px;
-      background-color: #dddddd;
-}
-
-.sub-hd-lnb a {
-      display: block;
-      line-height: 56px;
-      height: 56px;
-}
-
-.morning-subhdtxt-bg {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      top: 80px;
-      left: 650px;
-      background-image: url('/images/morning-subhd.png');
-      background-size: cover;
-}
 /* sub-hd-txt */
 .sub-hd-txt {
       width: 1180px;
