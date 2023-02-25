@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 
 // middleware
 const fs = require('fs');
