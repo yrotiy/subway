@@ -5,12 +5,12 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>SUBWAY 회원가입</title>
+      <title>SUBWAY 회원가입 완료</title>
       <link rel="shortcut icon" type="image/x-icon" href="/images/subway-favicon/favicon-1.png" />
       <link rel="apple-touch-icon" href="/images/subway-favicon/favicon-1.png" />
       <link rel="stylesheet" href="/style/reset.css">
       <link rel="stylesheet" href="/style/common.css">
-      <link rel="stylesheet" href="/style/subwayGnb/register.css">
+      <link rel="stylesheet" href="/style/subwayGnb/registerSuccess.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
@@ -101,13 +101,13 @@
                         <a href="#"><img src="/images/mobile-banner-5.jpg" alt="" importance="high"></a>
                   </div>
                   <div class="mobile-tabs">
-                        <a href="" class="mobile-tab">
+                        <a href="/FAST-SUB" class="mobile-tab">
                               <p>FAST-SUB</p>
                               <p>매장 선주문</p>
                               <div class="mobile-tab-icon"><img src="/images/mobile-tab-1.png" alt=""></div>
                         </a>
                         <span class="mbt-bdr"></span>
-                        <a href="" class="mobile-tab">
+                        <a href="/HOME-SUB" class="mobile-tab">
                               <p>HOME-SUB</p>
                               <p>배달 주문</p>
                               <div class="mobile-tab-icon mobile-tab-icon-2"><img src="/images/mobile-tab-2.png" alt="">
@@ -120,32 +120,25 @@
                         <div class="mb-menu-hd">
                               <a href=""><img src="/images/mobile-menu-logo.jpg" alt=""></a>
                               <div class="mb-menu-setting">
-                                    <a class="mb-menu-settingBtn" href=""><span
-                                                class="material-symbols-sharp">settings</span></a>
+                                    <a class="mb-menu-settingBtn" href="#"><span class="material-symbols-sharp">settings</span></a>
                                     <span class="material-symbols-sharp mb-menu-closeBtn">close</span>
                               </div>
                         </div>
                         <div class="mobile-gnb">
                               <p>로그인해주세요.<br>아직 회원이 아니신가요?</p>
                               <ul>
-                                    <li><a href="">로그인</a></li>
-                                    <li><a href="">회원가입</a></li>
+                                    <li><a href="/login">로그인</a></li>
+                                    <li><a href="/register">회원가입</a></li>
                               </ul>
                         </div>
                         <div class="mobile-myMenu">
                               <ul>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-1.png"
-                                                            alt=""></span>FAST-SUB</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-2.png"
-                                                            alt=""></span>HOME-SUB</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-3.png"
-                                                            alt=""></span>단체주문</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-4.png"
-                                                            alt=""></span>써브카드</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-5.png"
-                                                            alt=""></span>쿠폰</a></li>
-                                    <li><a href=""><span class="myMenu-i"><img src="/images/mb-myMenu-6.png"
-                                                            alt=""></span>e-Gift</a></li>
+                                    <li><a href="/FAST-SUB"><span class="myMenu-i"><img src="/images/mb-myMenu-1.png" alt=""></span>FAST-SUB</a></li>
+                                    <li><a href="/HOME-SUB"><span class="myMenu-i"><img src="/images/mb-myMenu-2.png" alt=""></span>HOME-SUB</a></li>
+                                    <li><a href="/groupOrder"><span class="myMenu-i"><img src="/images/mb-myMenu-3.png" alt=""></span>단체주문</a></li>
+                                    <li><a href="subwayCard"><span class="myMenu-i"><img src="/images/mb-myMenu-4.png" alt=""></span>써브카드</a></li>
+                                    <li><a href="/subwayCupon"><span class="myMenu-i"><img src="/images/mb-myMenu-5.png" alt=""></span>쿠폰</a></li>
+                                    <li><a href="/subwayGift"><span class="myMenu-i"><img src="/images/mb-myMenu-6.png" alt=""></span>e-Gift</a></li>
                               </ul>
                         </div>
                         <!-- mobile-lnb -->
@@ -162,8 +155,8 @@
                                     </button>
                                     <div class="mb-lnb-body">
                                           <ul>
-                                                <li id="mb-finish"><a href="/sdw">샌드위치</a></li>
-                                                <li id="mb-finish"><a href="/wrap">랩 · 기타</a></li>
+                                                <li id="mb-finish"><a href="/sandwich">샌드위치</a></li>
+                                                <li id="mb-finish"><a href="/unit">랩 · 기타</a></li>
                                                 <li id="mb-finish"><a href="/salad">샐러드</a></li>
                                                 <li id="mb-finish"><a href="/morning">아침메뉴</a></li>
                                                 <li id="mb-finish"><a href="/smile">스마일썹</a></li>
@@ -184,8 +177,8 @@
                                     </button>
                                     <div class="mb-lnb-body">
                                           <ul>
-                                                <li><a href="/sub-use">써브웨이 이용방법</a></li>
-                                                <li><a href="/gm-use">단체메뉴 이용방법</a></li>
+                                                <li id="mb-finish"><a href="/subwayUtilization">써브웨이 이용방법</a></li>
+                                                <li><a href="/groupMenuUtilization">단체메뉴 이용방법</a></li>
                                                 <li id="mb-finish"><a href="/freshInfo">신선한 재료 소개</a></li>
                                                 <li><a href="/appUtilizationMenu">App 이용방법</a></li>
                                           </ul>
@@ -225,7 +218,7 @@
                                           <ul>
                                                 <li><a href="/histroySubway">써브웨이 역사</a></li>
                                                 <li><a href="/promiseSubway">단체메뉴 약속</a></li>
-                                                <li><a href="artistSubway">샌드위치 아티스트 지원</a></li>
+                                                <li><a href="/artistSubway">샌드위치 아티스트 지원</a></li>
                                                 <li><a href="/storeSearch">매장찾기</a></li>
                                           </ul>
                                     </div>
@@ -272,75 +265,42 @@
                   </div>
             </div>
             <div class="mobileMenuBg"></div>
-            <section id="register">
-                  <div class="register-title">
-                        <p>회원가입</p>
-                        <p>써브웨이 회원가입 하고 다양한 혜택을 누리세요!</p>
+            <!-- SECTION -->
+            <section id="registerSuccess">
+                  <div class="registerSuccess-title">
+                        <p>가입완료</p>
+                        <p>써브웨이 회원이 되신 걸 환영합니다.</p>
                   </div>
-                  <div class="register-step">
+                  <div class="registerSuccess-step">
                         <div></div>
                         <span class="material-symbols-sharp">more_horiz</span>
                         <div></div>
                   </div>
-                  <div class="registerForm">
-                        <span class="registerFormTxt">
-                              <strong>STEP 1.</strong>
-                              <p>회원정보 입력하기</p>
+                  <div class="registerSuccessForm">
+                        <span class="registerSuccessFormTxt">
+                              <strong>STEP 2.</strong>
+                              <p>가입완료</p>
                         </span>
-                        <div class="register-wrapper">
-                              <div class="register-container">
-                                    <div class="register-contents">
-                                          <div>
-                                                <form action="" class="userName-form">
-                                                      <label for="userName">이름</label>
-                                                      <input type="text" id="userName" placeholder="이름 입력" required autocomplete="off">
-                                                </form>
-                                                <p class="userErr userName-err">2글자 이상 문자로 입력하세요.</p>
-                                          </div>
-                                          <div>
-                                                <form action="" class="userEmail-form">
-                                                      <label for="userEmail">이메일</label>
-                                                      <input class="beforCheckInput" type="text" id="userEmail" placeholder="이메일 입력" required autocomplete="off">
-                                                </form>
-                                                <p class="userErr userEmail-err">올바른 이메일 주소가 아닙니다.</p>
-                                                <p class="userAlert userEmail-alert">먼저 이름을 입력하세요.</p>
-                                          </div>
-                                          <div>
-                                                <form action="" class="userPhone-form">
-                                                      <label for="userPhone">전화번호</label>
-                                                      <input class="beforCheckInput" type="tel" id="userPhone" placeholder="전화번호 입력" required autocomplete="off">
-                                                </form>
-                                                <p class="userErr userPhone-err">유효한 전화번호를 입력하세요.</p>
-                                                <p class="userAlert userPhone-alert">먼저 이메일을 입력하세요.</p>
-                                          </div>
-                                          <div>
-                                                <form action="" class="userId-form">
-                                                      <label for="userId">아이디</label>
-                                                      <input class="beforCheckInput" type="text" id="userId" placeholder="아이디 입력" required autocomplete="off">
-                                                </form>
-                                                <p class="userErr userId-err">5글자 이상 영문자로 입력하세요.</p>
-                                                <p class="userAlert userId-alert">먼저 전화번호를 입력하세요.</p>
-                                          </div>
-                                          <div>
-                                                <form action="" class="userPw-form">
-                                                      <label for="userPw">비밀번호</label>
-                                                      <input class="beforCheckInput" type="password" id="userPw" placeholder="비밀번호 입력 (영문자,숫자,특수문자를 포함한 8자리 이상)" required autocomplete="off">
-                                                      <span class="material-symbols-sharp show-pw"></span>
-                                                </form>
-                                                <p class="userErr userPw-err">조건에 충족하지 않는 비밀번호입니다.<br>다시 입력하세요.</p>
-                                                <p class="userAlert userPw-alert">먼저 아이디를 설정하세요.</p>
-                                          </div>
-                                          <div>
-                                                <form action="" class="userPwCheck-form">
-                                                      <label for="userPwCheck">비밀번호 확인</label>
-                                                      <input class="beforCheckInput" type="password" id="userPwCheck" placeholder="비밀번호 확인" required autocomplete="off">
-                                                      <span class="material-symbols-sharp show-pw"></span>
-                                                </form>
-                                                <p class="userErr userPwCheck-err">이전에 입력한 비밀번호 같지 않습니다.</p>
-                                                <p class="userAlert userPwCheck-alert">먼저 비밀번호를 설정하세요</p>
+                        <div class="registerSuccess-wrapper">
+                              <div class="registerSuccess-container">
+                                    <div class="registerSuccess-contents">
+                                          <p><span class="userName-txt">홍길동</span>님, 써브웨이의 다양한 혜택을 즐겨보세요!</p>
+                                          <div class="myMenu">
+                                                <div class="myMenu-item">
+                                                      <p>FAST-SUB</p>
+                                                      <span><img src="/images/mb-myMenu-1.png" alt=""></span>
+                                                      <p>온라인 주문 후 매장에서<br>픽업/시식하는 서비스입니다.</p>
+                                                </div>
+                                                <div class="myMenu-item">
+                                                      <p>HOME-SUB</p>
+                                                      <span><img src="/images/register-myMenu_2.png" alt=""></span>
+                                                      <p>온라인 주문 시<br>배달되는 서비스입니다.</p>
+                                                </div>
                                           </div>
                                     </div>
-                                    <button id="registerBtn">회원가입</button>
+                                    <a href="/login" id="login-btn">로그인
+                                          <span class="material-symbols-sharp">check</span>
+                                    </a>
                               </div>
                         </div>
                   </div>
@@ -389,7 +349,7 @@
       <script src="/script/jquery-ui.js"></script>
       <script src="/script/jquery.bxslider.js"></script>
       <script src="/script/subway/common.js"></script>
-      <script src="/script/subway/register.js"></script>
+      <script src="/script/subway/registerSuccess.js"></script>
 </body>
 
 </html>

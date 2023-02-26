@@ -1,5 +1,5 @@
 const path = require('path');
-const fs = require('fs');
+const User = require('../model/User');
 
 const index = (req, res)=>{
       res.sendFile(path.join(__dirname, '..' ,'view', 'index.html'));
@@ -9,9 +9,27 @@ const index = (req, res)=>{
 const login = (req, res) => {
       res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'subwayGnb' ,'login.html'))
 }
+
+const processLogin = async (req, res) => {
+      const user = new User(req.body);
+      const response = await user.login();
+      return res.json(response);
+}
+
 const register = (req, res) => {
       res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'subwayGnb' ,'register.html'))
 }
+
+const registerSuccess = (req, res) => {
+      res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'subwayGnb' ,'registerSuccess.html'))
+}
+
+const processRegister = async (req, res) => {
+      const user = new User(req.body);
+      const response = await user.register();
+      return res.json(response);
+}
+
 const mySubway = (req, res) => {
       res.sendFile(path.join(__dirname, '..' , 'view','subdir', 'subwayGnb' ,'mySubway.html'))
 }
@@ -65,7 +83,7 @@ const appUtilizationMenu = (req, res) => {
 }
 
 module.exports = { 
-      index, login, register, mySubway, searchId, searchPw,
+      index, login, processLogin, register, processRegister, registerSuccess, mySubway, searchId, searchPw,
       sandwich, unit, salad, morning, smile, catering, 
       subwayUtilization, groupMenuUtilization, freshInfo, appUtilizationMenu
-}
+};

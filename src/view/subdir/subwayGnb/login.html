@@ -347,25 +347,7 @@
       <script src="/script/jquery-ui.js"></script>
       <script src="/script/jquery.bxslider.js"></script>
       <script src="/script/subway/common.js"></script>
-      <script>
-            $(document).on('click', function(event){
-                  let loginInput = $('.login-form input');
-                  
-                  if(event.target.tagName == 'INPUT') {
-                        // form active
-                        loginInput.parent().parent().addClass('active');
-
-                        //label active
-                        let notActive = $(event.target).parent().siblings().children().first();
-                        $(event.target).siblings().addClass('active');
-                        $(notActive).removeClass('active');
-                  } else {
-                        loginInput.parent().parent().removeClass('active');
-                        $('.login-form label').removeClass('active');
-                  }
-                  
-            })
-      </script>
+      <script src="/script/subway/login.js"></script>
 </body>
 
 </html>

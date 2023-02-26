@@ -1,0 +1,47 @@
+{
+	"name": [
+		"홍길동",
+		"보름달",
+		"오징어",
+		"비행기",
+		"이홍합",
+		"김구름",
+		"석박지"
+	],
+	"email": [
+		"test01@gmail.com",
+		"test02@naver.com",
+		"test03@hanmail.com",
+		"airplane@gmail.com",
+		"honghap@naver.com",
+		"kimcloud77@hanmail.net",
+		"parkgi@gmail.com"
+	],
+	"phone": [
+		"01012345678",
+		"0109836283",
+		"024261066",
+		"01058784841",
+		"01012123434",
+		"01078789898",
+		"01073479810"
+	],
+	"id": [
+		"test01",
+		"test02",
+		"test03",
+		"airplane",
+		"honghap",
+		"cloud",
+		"parkpark"
+	],
+	"pw": [
+		"1234",
+		"5678",
+		"9000",
+		"airplane1234!",
+		"honghap!",
+		"cloud77@",
+		"parkpark9810!"
+	]
+}

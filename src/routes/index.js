@@ -1,15 +1,20 @@
 const express = require('express');
 const router = express.Router();
 
-const { index, login, register, mySubway, searchId, searchPw,
+const { index, login, processLogin, register, processRegister, registerSuccess, mySubway, searchId, searchPw,
       sandwich, unit, salad, morning, smile, catering, 
-      subwayUtilization, groupMenuUtilization, freshInfo, appUtilizationMenu} = require('../controller/root');
+      subwayUtilization, groupMenuUtilization, freshInfo, appUtilizationMenu} = require('../controller/index');
 
 router.get('/', index);
 
 // GNB
 router.get('/login', login);
+router.post('/login', processLogin);
+
 router.get('/register', register);
+router.post('/register', processRegister);
+router.get('/registerSuccess', registerSuccess)
+
 router.get('/mySubway', mySubway);
 router.get('/searchId', searchId);
 router.get('/searchPw', searchPw);

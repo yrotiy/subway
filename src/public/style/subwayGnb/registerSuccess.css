@@ -1,0 +1,205 @@
+.registerSuccess-title {
+      margin-bottom: 35px;
+      text-align: center;
+}
+
+.registerSuccess-title > p:nth-child(1) {
+      margin-bottom: 15px;
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--text-black);
+}
+
+.registerSuccess-title > p:nth-child(2) {
+      font-size: 16px;
+      font-weight: 100;
+      color: #999;
+} 
+
+/* registerSuccess step */
+.registerSuccess-step {
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 45px;
+}
+
+.registerSuccess-step > div:nth-of-type(1) {
+      width: 70px;
+      height: 70px;
+      background-position: -140px 0px;
+      background-image: url('/images/register-stepIcon.png');
+      background-repeat: no-repeat;
+}
+
+.registerSuccess-step > div:nth-of-type(2) {
+      width: 70px;
+      height: 70px;
+      background-position: -210px -70px;
+      background-image: url('/images/register-stepIcon.png');
+      background-repeat: no-repeat;
+}
+
+.registerSuccess-step > span {
+      margin: 22px;
+      font-size: 55px;
+      color: var(--point-color);
+}
+
+section#registerSuccess {
+      width: 100%;
+      height: fit-content;
+      padding: 100px 0;
+      background-color: var(--mobile-main-bg);
+}
+
+.registerSuccessForm {
+      width: 1170px;
+      height: fit-content;
+      margin: auto;
+      position: relative;
+}
+
+.registerSuccessFormTxt {
+      width: 1170px;
+      height: 70px;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 40px;
+      background-color: #58006c;
+      font-size: 24px;
+      line-height: 70px;
+}
+
+.registerSuccessFormTxt strong {
+      color: var(--white-color);
+}
+
+.registerSuccessFormTxt p {
+      color: var(--point-color);
+      text-indent: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+}
+
+.registerSuccess-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 130px;
+      padding-bottom: 55px;
+      background-color: var(--white-color);
+      box-shadow: #0000001a 0px 1px 2px 0px;
+      border-radius: 40px 0 40px 0;
+}
+
+.registerSuccess-container {
+      width: 100%;
+}
+
+.registerSuccess-contents {
+      text-align: center;
+      margin-bottom: 50px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid #8383833c;
+}
+
+.registerSuccess-contents > p {
+      margin-bottom: 50px;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text-black);
+}
+
+.userName-txt {
+      color: var(--primary-color);
+}
+
+.myMenu {
+      width: 750px;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.myMenu-item {
+      width: 360px;
+      padding: 35px 0;
+      cursor: pointer;
+}
+
+.myMenu-item:hover {
+      transform: translateY(-2px);
+      transition: 0.3s;
+}
+
+.myMenu-item > p:nth-of-type(1) {
+      margin-bottom: 22px;
+      font-size: 14px;
+      letter-spacing: -0.05em;
+      font-family: 'LeferiPoint-BlackA';
+      color: var(--text-black);
+}
+
+.myMenu-item > span {
+      display: block;
+      margin-bottom: 18px;
+}
+
+.myMenu-item > p:nth-of-type(2) {
+      font-size: 14.5px;
+      word-spacing: 0.1em;
+      line-height: 19px;
+      color: var(--white-color);
+}
+
+.myMenu-item:nth-child(1) {
+      border-radius: 30px 0 0 0;
+      background-color: var(--sb-history);
+}
+
+.myMenu-item:nth-child(2) {
+      border-radius: 0 0 30px 0;
+      background-color: #43a5ea;
+}
+
+.myMenu-item:nth-child(2) > span > img {
+      width: 90px;
+      height: 70px;
+}
+
+#login-btn {
+      width: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 12px 0;
+      padding-left: 5px;
+      border-radius: 32px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+      color: var(--white-color);
+      background-color: var(--primary-color);
+}
+
+#login-btn > span {
+      margin-left: 5px;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--point-color);
+}
+
+#login-btn:hover {
+      background-color: #008820;
+      transition: all 0.3s;
+}
+
+
